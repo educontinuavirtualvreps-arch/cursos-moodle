@@ -1,0 +1,10 @@
+/* Seleccionamos el header específico usando su ID y clases principales */
+#page-header.header-maxwidth {
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+#page-header.header-maxwidth .position-absolute.w-100.h-100 {
+    background: none !important;
+    display: none !important;
+}
