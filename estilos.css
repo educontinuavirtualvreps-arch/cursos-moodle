@@ -8,3 +8,10 @@
     background: none !important;
     display: none !important;
 }
+#page-header.hasbackground.design-1 .header-sub-section {
+    display: none !important;
+    visibility: hidden !important;
+}
+#module-21 {
+    display: none !important;
+}
