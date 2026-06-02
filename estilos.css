@@ -9,42 +9,35 @@
     display: none !important;
 }
 
-.header-sub-section,
-#page-header .header-sub-section,
-.instructor-info.stat-container {
+
+#page-header .header-sub-section, 
+.instructor-info, 
+li#module-21 {
     display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    min-height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
 }
 
-ul.section.img-text li#module-21 {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
 
-body, #page-wrapper, .drag-container, #page {
+body, #page-wrapper, .drag-container {
     background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
-    background-size: auto !important; /* Mantiene el tamaño original de las figuras para que no se pongan gigantes */
-    background-position: top center !important; /* Centra el inicio del mapa arriba */
-    background-repeat: repeat !important; /* Hace que se repita hacia abajo y a los lados rellenando todo lo blanco */
-    background-attachment: scroll !important; /* Permite que el fondo fluya de forma natural con el scroll */
+    background-size: auto !important;
+    background-repeat: repeat !important;
 }
 
 
-#page.drawers, 
-#page.drawers .main-inner, 
-#page-wrapper #page {
-    background-color: transparent !important;
-    background: transparent !important;
-    box-shadow: none !important;
+#page.drawers .main-inner {
+    background-color: #ffffff !important;
+    border-radius: 12px !important;
+    padding: 25px !important;
+    max-width: 1400px !important;
+    margin: 20px auto !important;
 }
 
+
+#trailiconcontainer {
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    padding: 30px !important;
+    border-radius: 12px !important;
+}
