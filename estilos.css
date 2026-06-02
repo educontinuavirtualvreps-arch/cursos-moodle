@@ -9,12 +9,17 @@
     display: none !important;
 }
 
-div#page-header.hasbackground.design-1 div.header-sub-section {
+.header-sub-section,
+#page-header .header-sub-section,
+.instructor-info.stat-container {
     display: none !important;
     opacity: 0 !important;
     visibility: hidden !important;
     height: 0 !important;
+    min-height: 0 !important;
     padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
 }
 
 ul.section.img-text li#module-21 {
