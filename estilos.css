@@ -1,4 +1,3 @@
-
 #page-header.header-maxwidth {
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -9,13 +8,11 @@
     display: none !important;
 }
 
-
 #page-header .header-sub-section, 
 .instructor-info, 
 li#module-21 {
     display: none !important;
 }
-
 
 body, #page-wrapper, .drag-container, #page {
     background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
@@ -44,7 +41,6 @@ body, #page-wrapper, .drag-container, #page {
     margin: 30px auto !important; 
 }
 
-
 #trailiconcontainer {
     background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
     background-size: cover !important;
@@ -57,10 +53,8 @@ body, #page-wrapper, .drag-container, #page {
 }
 
 #wdm_course_stats.edw-stats-wrapper {
-    display: none !important;
-}
-
-body.editing #wdm_course_stats.edw-stats-wrapper,
-body.editing-on #wdm_course_stats.edw-stats-wrapper {
     display: flex !important;
+}
+body:not(.editing):not(.editing-on) #wdm_course_stats.edw-stats-wrapper {
+    display: none !important;
 }
