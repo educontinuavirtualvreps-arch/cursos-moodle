@@ -68,7 +68,6 @@ div#topofscroll .container div#wdm_course_stats.edw-stats-wrapper,
     overflow: hidden !important;
 }
 
-
 body.editing #wdm_course_stats.edw-stats-wrapper,
 body.editing-on #wdm_course_stats.edw-stats-wrapper,
 body.editing #topofscroll #wdm_course_stats.edw-stats-wrapper,
@@ -76,5 +75,5 @@ body.editing-on #topofscroll #wdm_course_stats.edw-stats-wrapper {
     display: flex !important;
     visibility: visible !important;
     height: auto !important;
-    padding: 24px !important; /* Restablece el padding original que se ve en tu captura */
+    padding: 24px !important;
 }
