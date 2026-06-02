@@ -50,6 +50,8 @@ body, #page-wrapper, .drag-container, #page {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    padding: 30px !important;
+    padding: 40px 20px !important;
     border-radius: 12px !important;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
 }
