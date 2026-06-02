@@ -55,3 +55,13 @@ body, #page-wrapper, .drag-container, #page {
     margin-top: 25px !important;
     margin-bottom: 25px !important;
 }
+
+#wdm_course_stats.edw-stats-wrapper {
+    display: none !important;
+}
+
+
+body.editing #wdm_course_stats.edw-stats-wrapper,
+body.editing-on #wdm_course_stats.edw-stats-wrapper {
+    display: flex !important; 
+}
