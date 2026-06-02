@@ -8,10 +8,20 @@
     background: none !important;
     display: none !important;
 }
-#page-header.hasbackground.design-1 .header-sub-section {
+
+div#page-header.hasbackground.design-1 div.header-sub-section {
     display: none !important;
+    opacity: 0 !important;
     visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
 }
-#module-21 {
+
+ul.section.img-text li#module-21 {
     display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
