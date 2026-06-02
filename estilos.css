@@ -57,23 +57,14 @@ body, #page-wrapper, .drag-container, #page {
 }
 
 
-div#topofscroll .container div#wdm_course_stats.edw-stats-wrapper,
-#page-wrapper #wdm_course_stats.edw-stats-wrapper,
 #wdm_course_stats.edw-stats-wrapper {
     display: none !important;
-    visibility: hidden !important;
-    height: 0 !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: hidden !important;
 }
+
 
 body.editing #wdm_course_stats.edw-stats-wrapper,
 body.editing-on #wdm_course_stats.edw-stats-wrapper,
-body.editing #topofscroll #wdm_course_stats.edw-stats-wrapper,
-body.editing-on #topofscroll #wdm_course_stats.edw-stats-wrapper {
+body.drawer-open-left #wdm_course_stats.edw-stats-wrapper,
+body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
     display: flex !important;
-    visibility: visible !important;
-    height: auto !important;
-    padding: 24px !important;
 }
