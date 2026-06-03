@@ -68,3 +68,6 @@ body.drawer-open-left #wdm_course_stats.edw-stats-wrapper,
 body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
     display: flex !important;
 }
+#page-header .page-context-header {
+    display: none !important;
+}
