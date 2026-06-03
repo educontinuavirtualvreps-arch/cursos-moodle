@@ -17,7 +17,10 @@ li#module-21 {
 }
 
 
-body, #page-wrapper, .drag-container, #page {
+body.course-5, 
+.course-5 #page-wrapper, 
+.course-5 .drag-container, 
+.course-5 #page {
     background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
