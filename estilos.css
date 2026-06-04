@@ -27,6 +27,36 @@ body.course-5,
     background-attachment: scroll !important;
 }
 
+body.course-6, 
+.course-6 #page-wrapper, 
+.course-6 .drag-container, 
+.course-6 #page {
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-size: auto !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+}
+
+body.course-7, 
+.course-7 #page-wrapper, 
+.course-7 .drag-container, 
+.course-7 #page {
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-size: auto !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+}
+
+body.course-8, 
+.course-8 #page-wrapper, 
+.course-8 .drag-container, 
+.course-8 #page {
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-size: auto !important;
+    background-repeat: repeat !important;
+    background-attachment: scroll !important;
+}
+
 #page.drawers, 
 #page.drawers .main-inner, 
 #topofscroll {
