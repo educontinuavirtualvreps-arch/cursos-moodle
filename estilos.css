@@ -57,6 +57,12 @@ body.course-8,
     background-attachment: scroll !important;
 }
 
+body.course-6 .modtype_forum,
+body.course-7 .modtype_forum,
+body.course-8 .modtype_forum {
+    display: none !important;
+}
+
 #page.drawers, 
 #page.drawers .main-inner, 
 #topofscroll {
