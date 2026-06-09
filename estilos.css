@@ -84,7 +84,10 @@ body.course-8 .modtype_forum {
 }
 
 
-#trailiconcontainer {
+body.course-5 #trailiconcontainer,
+body.course-6 #trailiconcontainer,
+body.course-7 #trailiconcontainer,
+body.course-8 #trailiconcontainer {
     background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
     background-size: cover !important;
     background-position: center center !important;
