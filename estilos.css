@@ -62,6 +62,10 @@ body.course-8 .modtype_forum {
     display: none !important;
 }
 
+body.course-7 .activity-item[data-activityname="Avisos"] {
+    display: none !important;
+}
+
 #page.drawers, 
 #page.drawers .main-inner, 
 #topofscroll {
