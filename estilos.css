@@ -58,7 +58,6 @@ body.course-8,
 }
 
 body.course-6 .modtype_forum,
-body.course-7 .modtype_forum,
 body.course-8 .modtype_forum {
     display: none !important;
 }
