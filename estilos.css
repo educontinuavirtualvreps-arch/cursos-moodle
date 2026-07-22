@@ -26,6 +26,9 @@ body.course-5,
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+body.course-5 li[data-key="courseinfo"] {
+    display: none !important;
+}
 
 body.course-6, 
 .course-6 #page-wrapper, 
@@ -35,6 +38,9 @@ body.course-6,
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
+}
+body.course-6 li[data-key="courseinfo"] {
+    display: none !important;
 }
 
 body.course-7, 
@@ -46,6 +52,9 @@ body.course-7,
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+body.course-7 li[data-key="courseinfo"] {
+    display: none !important;
+}
 
 body.course-8, 
 .course-8 #page-wrapper, 
@@ -55,6 +64,9 @@ body.course-8,
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
+}
+body.course-8 li[data-key="courseinfo"] {
+    display: none !important;
 }
 
 body.course-6 .modtype_forum,
