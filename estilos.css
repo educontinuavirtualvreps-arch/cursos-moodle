@@ -128,3 +128,89 @@ body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
 #page-header .page-context-header {
     display: none !important;
 }
+
+/* =========================================
+   TARJETA DE ACTIVIDAD - COURSE 5
+   ========================================= */
+
+.course5-contenedor {
+    display: flex;
+    align-items: center;
+    background-image: url('https://lh3.googleusercontent.com/u/0/d/17GkvHiGAuMHTy3_S2VK2sirG5_N-clV-');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+/* IMAGEN */
+.course5-imagen {
+    flex: 0 0 320px;
+}
+
+.course5-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* TEXTO */
+.parrafo-lateral {
+    padding: 25px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-shadow:
+        -1px -1px 2px rgba(0,0,0,0.7),
+         1px -1px 2px rgba(0,0,0,0.7),
+        -1px  1px 2px rgba(0,0,0,0.7),
+         1px  1px 2px rgba(0,0,0,0.7);
+}
+
+.parrafo-lateral p {
+    color: #ffffff;
+}
+
+.parrafo-lateral .titulo-verde {
+    color: #07a981;
+}
+
+.parrafo-lateral .titulo-naranja {
+    color: #f3951b;
+}
+
+
+/* =========================================
+   VISTA CELULAR
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    .course5-contenedor {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+    }
+
+    .course5-imagen {
+        flex: none !important;
+        width: 100% !important;
+    }
+
+    .course5-imagen img {
+        width: 100% !important;
+        height: auto !important;
+        object-fit: cover !important;
+        display: block !important;
+    }
+
+    .parrafo-lateral {
+        width: 100% !important;
+        padding: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+}
