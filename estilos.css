@@ -214,3 +214,16 @@ body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
     }
 
 }
+
+/* ========================================
+   OCULTAR "CATEGORÍAS"
+   ======================================== */
+
+
+li[data-key="coursecat"] {
+    display: none !important;
+}
+
+body.editing li[data-key="coursecat"] {
+    display: block !important;
+}
