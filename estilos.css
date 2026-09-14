@@ -215,15 +215,13 @@ body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
 
 }
 
-/* ========================================
-   OCULTAR "CATEGORÍAS"
-   ======================================== */
-
-
-li[data-key="coursecat"] {
+/* Ocultar Categorías por defecto */
+#page-wrapper li[data-key="coursecat"] {
     display: none !important;
 }
 
-body.editing li[data-key="coursecat"] {
-    display: block !important;
+/* Mostrar Categorías únicamente cuando
+   el interruptor de edición esté activado */
+body:has(input[name="setmode"]:checked) li[data-key="coursecat"] {
+    display: flex !important;
 }
