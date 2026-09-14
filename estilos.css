@@ -1,18 +1,36 @@
 
-#page-header.header-maxwidth {
+/* Configuración del encabezado */
+body.course-5 #page-header.header-maxwidth,
+body.course-6 #page-header.header-maxwidth,
+body.course-7 #page-header.header-maxwidth,
+body.course-8 #page-header.header-maxwidth {
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
 }
-#page-header.header-maxwidth .position-absolute.w-100.h-100 {
+
+/* Ocultar fondo/overlay del encabezado */
+body.course-5 #page-header.header-maxwidth .position-absolute.w-100.h-100,
+body.course-6 #page-header.header-maxwidth .position-absolute.w-100.h-100,
+body.course-7 #page-header.header-maxwidth .position-absolute.w-100.h-100,
+body.course-8 #page-header.header-maxwidth .position-absolute.w-100.h-100 {
     background: none !important;
     display: none !important;
 }
 
-
-#page-header .header-sub-section, 
-.instructor-info, 
-li#module-21 {
+/* Ocultar elementos del encabezado */
+body.course-5 #page-header .header-sub-section,
+body.course-6 #page-header .header-sub-section,
+body.course-7 #page-header .header-sub-section,
+body.course-8 #page-header .header-sub-section,
+body.course-5 .instructor-info,
+body.course-6 .instructor-info,
+body.course-7 .instructor-info,
+body.course-8 .instructor-info,
+body.course-5 li#module-21,
+body.course-6 li#module-21,
+body.course-7 li#module-21,
+body.course-8 li#module-21 {
     display: none !important;
 }
 
