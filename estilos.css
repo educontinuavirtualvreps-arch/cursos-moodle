@@ -248,17 +248,14 @@ body:has(input[name="setmode"]:checked) li[data-key="coursecat"] {
     display: flex !important;
 }
 
-/* Ocultar todas las secciones dentro del botón de ayuda */
-.popover-footer .popover-body .footer-section {
+
+
+/* BOTÓN AYUDA - mostrar solamente "Contactar con el soporte del sitio" */
+
+.popover.footer .popover-body > .footer-section {
     display: none !important;
 }
 
-/* Mostrar únicamente Contactar con el soporte del sitio */
-.popover-footer .popover-body .footer-section:first-child {
-    display: flex !important;
-}
-
-/* Mantener visible el botón "Ayuda Campus Virtual" */
-#modulehelpbtn {
+.popover.footer .popover-body > .footer-section:first-child {
     display: flex !important;
 }
