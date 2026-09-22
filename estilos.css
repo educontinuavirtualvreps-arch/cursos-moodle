@@ -1,5 +1,7 @@
+/* =========================================
+   CONFIGURACIÓN DEL ENCABEZADO
+   ========================================= */
 
-/* Configuración del encabezado */
 body.course-5 #page-header.header-maxwidth,
 body.course-6 #page-header.header-maxwidth,
 body.course-7 #page-header.header-maxwidth,
@@ -9,7 +11,11 @@ body.course-8 #page-header.header-maxwidth {
     background-position: center !important;
 }
 
-/* Ocultar fondo/overlay del encabezado */
+
+/* =========================================
+   OCULTAR FONDO / OVERLAY DEL ENCABEZADO
+   ========================================= */
+
 body.course-5 #page-header.header-maxwidth .position-absolute.w-100.h-100,
 body.course-6 #page-header.header-maxwidth .position-absolute.w-100.h-100,
 body.course-7 #page-header.header-maxwidth .position-absolute.w-100.h-100,
@@ -18,15 +24,21 @@ body.course-8 #page-header.header-maxwidth .position-absolute.w-100.h-100 {
     display: none !important;
 }
 
-/* Ocultar elementos del encabezado */
+
+/* =========================================
+   OCULTAR ELEMENTOS DEL ENCABEZADO
+   ========================================= */
+
 body.course-5 #page-header .header-sub-section,
 body.course-6 #page-header .header-sub-section,
 body.course-7 #page-header .header-sub-section,
 body.course-8 #page-header .header-sub-section,
+
 body.course-5 .instructor-info,
 body.course-6 .instructor-info,
 body.course-7 .instructor-info,
 body.course-8 .instructor-info,
+
 body.course-5 li#module-21,
 body.course-6 li#module-21,
 body.course-7 li#module-21,
@@ -35,69 +47,107 @@ body.course-8 li#module-21 {
 }
 
 
-body.course-5, 
-.course-5 #page-wrapper, 
-.course-5 .drag-container, 
+/* =========================================
+   FONDO - COURSE 5
+   ========================================= */
+
+body.course-5,
+.course-5 #page-wrapper,
+.course-5 .drag-container,
 .course-5 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+
 body.course-5 li[data-key="courseinfo"] {
     display: none !important;
 }
 
-body.course-6, 
-.course-6 #page-wrapper, 
-.course-6 .drag-container, 
+
+/* =========================================
+   FONDO - COURSE 6
+   ========================================= */
+
+body.course-6,
+.course-6 #page-wrapper,
+.course-6 .drag-container,
 .course-6 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+
 body.course-6 li[data-key="courseinfo"] {
     display: none !important;
 }
 
-body.course-7, 
-.course-7 #page-wrapper, 
-.course-7 .drag-container, 
+
+/* =========================================
+   FONDO - COURSE 7
+   ========================================= */
+
+body.course-7,
+.course-7 #page-wrapper,
+.course-7 .drag-container,
 .course-7 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+
 body.course-7 li[data-key="courseinfo"] {
     display: none !important;
 }
 
-body.course-8, 
-.course-8 #page-wrapper, 
-.course-8 .drag-container, 
+
+/* =========================================
+   FONDO - COURSE 8
+   ========================================= */
+
+body.course-8,
+.course-8 #page-wrapper,
+.course-8 .drag-container,
 .course-8 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
 }
+
 body.course-8 li[data-key="courseinfo"] {
     display: none !important;
 }
+
+
+/* =========================================
+   OCULTAR FOROS
+   ========================================= */
 
 body.course-6 .modtype_forum,
 body.course-8 .modtype_forum {
     display: none !important;
 }
 
+
+/* =========================================
+   OCULTAR AVISOS - COURSE 7
+   ========================================= */
+
 body.course-7 .activity-item[data-activityname="Avisos"] {
     display: none !important;
 }
 
-#page.drawers, 
-#page.drawers .main-inner, 
+
+/* =========================================
+   CONFIGURACIÓN GENERAL DEL CONTENEDOR
+   ========================================= */
+
+#page.drawers,
+#page.drawers .main-inner,
 #topofscroll {
     background-color: transparent !important;
     background: transparent !important;
@@ -106,22 +156,31 @@ body.course-7 .activity-item[data-activityname="Avisos"] {
     padding: 0 !important;
 }
 
+
+/* =========================================
+   CONTENEDOR PRINCIPAL
+   ========================================= */
+
 #topofscroll .container,
 .main-inner .container {
-    background-color: #ffffff !important; 
-    border-radius: 16px !important; 
-    padding: 35px !important; 
-    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1) !important; 
+    background-color: #ffffff !important;
+    border-radius: 16px !important;
+    padding: 35px !important;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1) !important;
     max-width: 1320px !important;
-    margin: 30px auto !important; 
+    margin: 30px auto !important;
 }
 
+
+/* =========================================
+   BANNER / TRAIL ICON
+   ========================================= */
 
 body.course-5 #trailiconcontainer,
 body.course-6 #trailiconcontainer,
 body.course-7 #trailiconcontainer,
 body.course-8 #trailiconcontainer {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@main/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -132,10 +191,18 @@ body.course-8 #trailiconcontainer {
 }
 
 
+/* =========================================
+   OCULTAR ESTADÍSTICAS
+   ========================================= */
+
 #wdm_course_stats.edw-stats-wrapper {
     display: none !important;
 }
 
+
+/* =========================================
+   MOSTRAR ESTADÍSTICAS EN MODO EDICIÓN
+   ========================================= */
 
 body.editing #wdm_course_stats.edw-stats-wrapper,
 body.editing-on #wdm_course_stats.edw-stats-wrapper,
@@ -143,13 +210,20 @@ body.drawer-open-left #wdm_course_stats.edw-stats-wrapper,
 body:has(.block-add-block) #wdm_course_stats.edw-stats-wrapper {
     display: flex !important;
 }
-/* Ocultar nombre del curso - SOLO CURSOS 5, 6, 7 Y 8 */
+
+
+/* =========================================
+   OCULTAR NOMBRE DEL CURSO
+   SOLO CURSOS 5, 6, 7 Y 8
+   ========================================= */
+
 body.course-5 #page-header .page-context-header,
 body.course-6 #page-header .page-context-header,
 body.course-7 #page-header .page-context-header,
 body.course-8 #page-header .page-context-header {
     display: none !important;
 }
+
 
 /* =========================================
    TARJETA DE ACTIVIDAD - COURSE 5
@@ -158,15 +232,26 @@ body.course-8 #page-header .page-context-header {
 .course5-contenedor {
     display: flex;
     align-items: center;
-    background-image: url('https://lh3.googleusercontent.com/u/0/d/17GkvHiGAuMHTy3_S2VK2sirG5_N-clV-');
+
+    /* Color de respaldo */
+    background-color: #1c63a8;
+
+    /* Imagen servida desde el repositorio */
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/course5-fondo.png');
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
     border-radius: 15px;
     overflow: hidden;
 }
 
-/* IMAGEN */
+
+/* =========================================
+   IMAGEN DE LA TARJETA
+   ========================================= */
+
 .course5-imagen {
     flex: 0 0 320px;
 }
@@ -178,13 +263,19 @@ body.course-8 #page-header .page-context-header {
     display: block;
 }
 
-/* TEXTO */
+
+/* =========================================
+   TEXTO DE LA TARJETA
+   ========================================= */
+
 .parrafo-lateral {
     padding: 25px;
     color: #ffffff;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     text-shadow:
         -1px -1px 2px rgba(0,0,0,0.7),
          1px -1px 2px rgba(0,0,0,0.7),
@@ -237,20 +328,31 @@ body.course-8 #page-header .page-context-header {
 
 }
 
-/* Ocultar Categorías por defecto */
+
+/* =========================================
+   OCULTAR CATEGORÍAS POR DEFECTO
+   ========================================= */
+
 #page-wrapper li[data-key="coursecat"] {
     display: none !important;
 }
 
-/* Mostrar Categorías únicamente cuando
-   el interruptor de edición esté activado */
+
+/* =========================================
+   MOSTRAR CATEGORÍAS ÚNICAMENTE
+   EN MODO EDICIÓN
+   ========================================= */
+
 body:has(input[name="setmode"]:checked) li[data-key="coursecat"] {
     display: flex !important;
 }
 
 
-
-/* BOTÓN AYUDA - mostrar solamente "Contactar con el soporte del sitio" */
+/* =========================================
+   BOTÓN AYUDA
+   Mostrar solamente:
+   "Contactar con el soporte del sitio"
+   ========================================= */
 
 .popover.footer .popover-body > .footer-section {
     display: none !important;
