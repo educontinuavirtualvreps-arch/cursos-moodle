@@ -55,7 +55,7 @@ body.course-5,
 .course-5 #page-wrapper,
 .course-5 .drag-container,
 .course-5 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
@@ -74,7 +74,7 @@ body.course-6,
 .course-6 #page-wrapper,
 .course-6 .drag-container,
 .course-6 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
@@ -93,7 +93,7 @@ body.course-7,
 .course-7 #page-wrapper,
 .course-7 .drag-container,
 .course-7 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
@@ -112,7 +112,7 @@ body.course-8,
 .course-8 #page-wrapper,
 .course-8 .drag-container,
 .course-8 #page {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/CONSULTA%20PREVIA%20-_textura%20(1).png') !important;
     background-size: auto !important;
     background-repeat: repeat !important;
     background-attachment: scroll !important;
@@ -180,7 +180,7 @@ body.course-5 #trailiconcontainer,
 body.course-6 #trailiconcontainer,
 body.course-7 #trailiconcontainer,
 body.course-8 #trailiconcontainer {
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/Gemini_Generated_Image_5x0vqk5x0vqk5x0v.png') !important;
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
@@ -234,10 +234,10 @@ body.course-8 #page-header .page-context-header {
     align-items: center;
 
     /* Color de respaldo */
-    background-color: #1c63a8;
+    background-color: #1c63a8 !important;
 
-    /* Imagen servida desde el repositorio */
-    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@47fa4812fb09c20a59f2596fa9655600494bed62/imagenes/course5-fondo.png');
+    /* Imagen alojada en GitHub / jsDelivr */
+    background-image: url('https://cdn.jsdelivr.net/gh/educontinuavirtualvreps-arch/cursos-moodle@2a3c594b9f2676524ec2d25481ea90526a1ee371/imagenes/course5-fondo.png.png');
 
     background-size: cover;
     background-position: center;
