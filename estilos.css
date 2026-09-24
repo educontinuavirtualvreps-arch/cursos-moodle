@@ -365,3 +365,19 @@ body:has(input[name="setmode"]:checked) li[data-key="coursecat"] {
 .popover.footer .popover-body > .footer-section:first-child {
     display: flex !important;
 }
+
+/* Curso 19 - estilo limpio para todos los mosaicos */
+body.path-course.course-19 .photo-tile-text h3 {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+    font-weight: 500 !important;
+
+    background: rgba(0, 0, 0, 0.55) !important;
+    color: #fff !important;
+
+    padding: 5px 8px !important;
+    margin: 0 !important;
+
+    border-radius: 3px !important;
+    text-shadow: none !important;
+}
