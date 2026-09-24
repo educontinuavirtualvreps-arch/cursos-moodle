@@ -366,18 +366,28 @@ body:has(input[name="setmode"]:checked) li[data-key="coursecat"] {
     display: flex !important;
 }
 
-/* Curso 19 - estilo limpio para todos los mosaicos */
+/* =========================================
+   MOSAICOS - CURSO 19
+   Títulos cortos con puntos suspensivos
+   ========================================= */
+
 body.path-course.course-19 .photo-tile-text h3 {
     font-size: 15px !important;
-    line-height: 1.4 !important;
+    line-height: 1.35 !important;
     font-weight: 500 !important;
 
-    background: rgba(0, 0, 0, 0.55) !important;
-    color: #fff !important;
+    color: #ffffff !important;
+    background: rgba(0, 0, 0, 0.42) !important;
 
-    padding: 5px 8px !important;
+    padding: 4px 7px !important;
     margin: 0 !important;
+    border-radius: 2px !important;
 
-    border-radius: 3px !important;
-    text-shadow: none !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.35) !important;
+
+    /* Mostrar máximo 2 líneas */
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical !important;
+    -webkit-line-clamp: 2 !important;
+    overflow: hidden !important;
 }
