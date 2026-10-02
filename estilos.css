@@ -312,7 +312,7 @@ body.course-8 #page-header .page-context-header {
 
 /* =========================================
    H5P - CURSOS 5, 6, 7 Y 8
-   TEXTO BLANCO + CONTORNO NEGRO
+   TEXTO BLANCO CON SOMBRA SUAVE
    ========================================= */
 
 body.course-5.path-mod-h5pactivity .parrafo-lateral p,
@@ -333,11 +333,15 @@ body.course-8.path-mod-h5pactivity .parrafo-lateral span {
     color: #ffffff !important;
     font-weight: 400 !important;
 
-    /* Contorno negro fino */
-    -webkit-text-stroke: 0.5px #000000 !important;
+    /* Sombra suave para mejorar la lectura */
+    text-shadow:
+        1px 1px 1px rgba(0, 0, 0, 0.75),
+        -1px -1px 1px rgba(0, 0, 0, 0.45),
+        1px -1px 1px rgba(0, 0, 0, 0.45),
+        -1px 1px 1px rgba(0, 0, 0, 0.45);
 
-    /* Sin sombra borrosa */
-    text-shadow: none !important;
+    /* Eliminar contorno duro */
+    -webkit-text-stroke: 0 !important;
 }
 
 
@@ -350,8 +354,15 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-verde {
     color: #07a981 !important;
-    -webkit-text-stroke: 0.5px #000000 !important;
-    text-shadow: none !important;
+    font-weight: 400 !important;
+
+    text-shadow:
+        1px 1px 1px rgba(0, 0, 0, 0.75),
+        -1px -1px 1px rgba(0, 0, 0, 0.45),
+        1px -1px 1px rgba(0, 0, 0, 0.45),
+        -1px 1px 1px rgba(0, 0, 0, 0.45);
+
+    -webkit-text-stroke: 0 !important;
 }
 
 
@@ -364,8 +375,15 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-naranja {
     color: #f3951b !important;
-    -webkit-text-stroke: 0.5px #000000 !important;
-    text-shadow: none !important;
+    font-weight: 400 !important;
+
+    text-shadow:
+        1px 1px 1px rgba(0, 0, 0, 0.75),
+        -1px -1px 1px rgba(0, 0, 0, 0.45),
+        1px -1px 1px rgba(0, 0, 0, 0.45),
+        -1px 1px 1px rgba(0, 0, 0, 0.45);
+
+    -webkit-text-stroke: 0 !important;
 }
 
 
