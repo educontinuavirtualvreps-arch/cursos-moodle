@@ -311,8 +311,8 @@ body.course-8 #page-header .page-context-header {
 
 
 /* =========================================
-   H5P - CURSOS 5, 6, 7 Y 8
-   TEXTO BLANCO CON SOMBRA NEGRA
+   SOMBRA NEGRA PARA TEXTO DE ACTIVIDADES H5P
+   CURSOS 5, 6, 7 Y 8
    ========================================= */
 
 body.course-5.path-mod-h5pactivity .parrafo-lateral p,
@@ -333,14 +333,13 @@ body.course-8.path-mod-h5pactivity .parrafo-lateral span {
     color: #ffffff !important;
     font-weight: 400 !important;
 
-    /* Sombra negra alrededor de las letras */
+    /* SOMBRA / CONTORNO NEGRO */
     text-shadow:
-        1px 0 1px rgba(0, 0, 0, 0.95),
-        -1px 0 1px rgba(0, 0, 0, 0.95),
-        0 1px 1px rgba(0, 0, 0, 0.95),
-        0 -1px 1px rgba(0, 0, 0, 0.95),
-        1px 1px 2px rgba(0, 0, 0, 0.75),
-        -1px -1px 2px rgba(0, 0, 0, 0.75);
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000,
+         0px  2px 2px rgba(0, 0, 0, 0.65) !important;
 
     -webkit-text-stroke: 0 !important;
 }
@@ -355,15 +354,13 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-verde {
     color: #07a981 !important;
-    font-weight: 400 !important;
 
     text-shadow:
-        1px 0 1px rgba(0, 0, 0, 0.95),
-        -1px 0 1px rgba(0, 0, 0, 0.95),
-        0 1px 1px rgba(0, 0, 0, 0.95),
-        0 -1px 1px rgba(0, 0, 0, 0.95),
-        1px 1px 2px rgba(0, 0, 0, 0.75),
-        -1px -1px 2px rgba(0, 0, 0, 0.75);
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000,
+         0px  2px 2px rgba(0, 0, 0, 0.65) !important;
 
     -webkit-text-stroke: 0 !important;
 }
@@ -378,15 +375,13 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-naranja {
     color: #f3951b !important;
-    font-weight: 400 !important;
 
     text-shadow:
-        1px 0 1px rgba(0, 0, 0, 0.95),
-        -1px 0 1px rgba(0, 0, 0, 0.95),
-        0 1px 1px rgba(0, 0, 0, 0.95),
-        0 -1px 1px rgba(0, 0, 0, 0.95),
-        1px 1px 2px rgba(0, 0, 0, 0.75),
-        -1px -1px 2px rgba(0, 0, 0, 0.75);
+        -1px -1px 0 #000000,
+         1px -1px 0 #000000,
+        -1px  1px 0 #000000,
+         1px  1px 0 #000000,
+         0px  2px 2px rgba(0, 0, 0, 0.65) !important;
 
     -webkit-text-stroke: 0 !important;
 }
