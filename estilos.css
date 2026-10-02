@@ -274,27 +274,35 @@ body.course-8 #page-header .page-context-header {
 
 .parrafo-lateral {
     padding: 25px;
-    color: #ffffff;
+    color: #333333 !important;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 
+    /* Eliminar efecto borroso */
     text-shadow: none !important;
 }
 
-.parrafo-lateral p {
-    color: #ffffff !important;
+/* Todo el texto */
+.parrafo-lateral p,
+.parrafo-lateral li,
+.parrafo-lateral span,
+.parrafo-lateral div {
+    color: #333333 !important;
     font-weight: 400 !important;
     text-shadow: none !important;
 }
 
+/* Títulos de colores */
 .parrafo-lateral .titulo-verde {
-    color: #07a981;
+    color: #07a981 !important;
+    text-shadow: none !important;
 }
 
 .parrafo-lateral .titulo-naranja {
-    color: #f3951b;
+    color: #f3951b !important;
+    text-shadow: none !important;
 }
 
 
