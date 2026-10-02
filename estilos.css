@@ -277,10 +277,14 @@ body.course-8 #page-header .page-context-header {
     flex-direction: column;
     justify-content: center;
 
+    /* Eliminar efecto borroso */
     text-shadow: none !important;
 }
 
-/* Texto negro por defecto */
+/* =========================================
+   TEXTO NEGRO POR DEFECTO
+   ========================================= */
+
 .parrafo-lateral p,
 .parrafo-lateral li,
 .parrafo-lateral span,
@@ -307,21 +311,10 @@ body.course-8 #page-header .page-context-header {
 
 
 /* =========================================
-   ACTIVIDADES H5P
-   CURSOS 5, 6, 7 Y 8
+   H5P - CURSOS 5, 6, 7 Y 8
+   TEXTO BLANCO + CONTORNO NEGRO
    ========================================= */
 
-/* Fondo negro y texto blanco */
-body.course-5.path-mod-h5pactivity .parrafo-lateral,
-body.course-6.path-mod-h5pactivity .parrafo-lateral,
-body.course-7.path-mod-h5pactivity .parrafo-lateral,
-body.course-8.path-mod-h5pactivity .parrafo-lateral {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-}
-
-
-/* Texto blanco */
 body.course-5.path-mod-h5pactivity .parrafo-lateral p,
 body.course-5.path-mod-h5pactivity .parrafo-lateral li,
 body.course-5.path-mod-h5pactivity .parrafo-lateral span,
@@ -339,13 +332,17 @@ body.course-8.path-mod-h5pactivity .parrafo-lateral li,
 body.course-8.path-mod-h5pactivity .parrafo-lateral span {
     color: #ffffff !important;
     font-weight: 400 !important;
+
+    /* Contorno negro fino */
+    -webkit-text-stroke: 0.5px #000000 !important;
+
+    /* Sin sombra borrosa */
     text-shadow: none !important;
 }
 
 
 /* =========================================
    TÍTULO VERDE
-   DEBE CONSERVAR EL COLOR
    ========================================= */
 
 body.course-5.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
@@ -353,12 +350,13 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-verde,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-verde {
     color: #07a981 !important;
+    -webkit-text-stroke: 0.5px #000000 !important;
+    text-shadow: none !important;
 }
 
 
 /* =========================================
    TÍTULO NARANJA
-   DEBE CONSERVAR EL COLOR
    ========================================= */
 
 body.course-5.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
@@ -366,6 +364,8 @@ body.course-6.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-7.path-mod-h5pactivity .parrafo-lateral .titulo-naranja,
 body.course-8.path-mod-h5pactivity .parrafo-lateral .titulo-naranja {
     color: #f3951b !important;
+    -webkit-text-stroke: 0.5px #000000 !important;
+    text-shadow: none !important;
 }
 
 
