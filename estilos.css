@@ -267,14 +267,12 @@ body.course-8 #page-header .page-context-header {
     display: block;
 }
 
-
 /* =========================================
-   TEXTO DE LA TARJETA
+   TEXTO DE LAS TARJETAS
    ========================================= */
 
 .parrafo-lateral {
     padding: 25px;
-    color: #333333 !important;
 
     display: flex;
     flex-direction: column;
@@ -284,7 +282,7 @@ body.course-8 #page-header .page-context-header {
     text-shadow: none !important;
 }
 
-/* Todo el texto */
+/* Texto negro por defecto */
 .parrafo-lateral p,
 .parrafo-lateral li,
 .parrafo-lateral span,
@@ -302,6 +300,49 @@ body.course-8 #page-header .page-context-header {
 
 .parrafo-lateral .titulo-naranja {
     color: #f3951b !important;
+    text-shadow: none !important;
+}
+
+
+/* =========================================
+   TEXTO BLANCO
+   SOLO EN ACTIVIDADES H5P
+   DE LOS CURSOS 5, 6, 7 Y 8
+   ========================================= */
+
+/* CURSO 5 */
+body.course-5.path-mod-h5pactivity .parrafo-lateral,
+body.course-5.path-mod-h5pactivity .parrafo-lateral p,
+body.course-5.path-mod-h5pactivity .parrafo-lateral li,
+body.course-5.path-mod-h5pactivity .parrafo-lateral span {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* CURSO 6 */
+body.course-6.path-mod-h5pactivity .parrafo-lateral,
+body.course-6.path-mod-h5pactivity .parrafo-lateral p,
+body.course-6.path-mod-h5pactivity .parrafo-lateral li,
+body.course-6.path-mod-h5pactivity .parrafo-lateral span {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* CURSO 7 */
+body.course-7.path-mod-h5pactivity .parrafo-lateral,
+body.course-7.path-mod-h5pactivity .parrafo-lateral p,
+body.course-7.path-mod-h5pactivity .parrafo-lateral li,
+body.course-7.path-mod-h5pactivity .parrafo-lateral span {
+    color: #ffffff !important;
+    text-shadow: none !important;
+}
+
+/* CURSO 8 */
+body.course-8.path-mod-h5pactivity .parrafo-lateral,
+body.course-8.path-mod-h5pactivity .parrafo-lateral p,
+body.course-8.path-mod-h5pactivity .parrafo-lateral li,
+body.course-8.path-mod-h5pactivity .parrafo-lateral span {
+    color: #ffffff !important;
     text-shadow: none !important;
 }
 
