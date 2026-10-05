@@ -477,3 +477,24 @@ body.path-course.course-19 .photo-tile-text h3 {
     -webkit-line-clamp: 2 !important;
     overflow: hidden !important;
 }
+
+/* =========================================
+   POLÍTICA DE DATOS
+   ========================================= */
+
+@media (min-width: 769px) {
+
+    /* Centrar botón de consentimiento */
+    body.path-admin-tool-policy .policy_buttons {
+        text-align: center;
+    }
+
+    body.path-admin-tool-policy .policy_buttons a.btn-primary {
+        display: inline-block;
+    }
+
+    /* Ocultar calendario */
+    body.path-admin-tool-policy .block_calendar_month {
+        display: none !important;
+    }
+}
