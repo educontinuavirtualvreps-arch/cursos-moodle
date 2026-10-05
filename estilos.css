@@ -482,9 +482,8 @@ body.path-course.course-19 .photo-tile-text h3 {
    POLÍTICA DE DATOS
    ========================================= */
 
+/* Centrar botón de consentimiento */
 @media (min-width: 769px) {
-
-    /* Centrar botón de consentimiento */
     body.path-admin-tool-policy .policy_buttons {
         text-align: center;
     }
@@ -492,9 +491,14 @@ body.path-course.course-19 .photo-tile-text h3 {
     body.path-admin-tool-policy .policy_buttons a.btn-primary {
         display: inline-block;
     }
+}
 
-    /* Ocultar calendario */
-    body.path-admin-tool-policy .block_calendar_month {
-        display: none !important;
-    }
+/* Ocultar calendario */
+body.path-admin-tool-policy .block_calendar_month {
+    display: none !important;
+}
+
+/* Ocultar "Universidad del valle" */
+body.path-admin-tool-policy .page-header-headings {
+    display: none !important;
 }
