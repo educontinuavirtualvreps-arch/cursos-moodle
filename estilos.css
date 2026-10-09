@@ -528,3 +528,13 @@ body.path-admin-tool-policy .block_calendar_month {
 body.path-admin-tool-policy .page-header-headings {
     display: none !important;
 }
+
+/* Ocultar estadísticas por defecto */
+#wdm_course-stats {
+    display: none !important;
+}
+
+/* Mostrar estadísticas solo en modo edición */
+body.editing #wdm_course-stats {
+    display: flex !important;
+}
