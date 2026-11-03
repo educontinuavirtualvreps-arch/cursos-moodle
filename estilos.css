@@ -726,7 +726,7 @@ body#page-course-view-tiles.course-33
    ============================================================ */
 
 body#page-course-view-tiles.course-33
-#multi_section_tiles > li {
+#multi_section_tiles > li.tile {
 
     display: block !important;
 
@@ -763,7 +763,7 @@ body#page-course-view-tiles.course-33
 /* Interaccion */
 
 body#page-course-view-tiles.course-33
-#multi_section_tiles > li:hover {
+#multi_section_tiles > li.tile:hover {
 
     transform: translateY(-4px);
 
@@ -1355,7 +1355,7 @@ body#page-course-view-tiles.course-33
     }
 
     body#page-course-view-tiles.course-33
-    #multi_section_tiles > li,
+    #multi_section_tiles > li.tile,
     body#page-course-view-tiles.course-33
     #multi_section_tiles .tile-link {
 
@@ -1419,7 +1419,7 @@ body#page-course-view-tiles.course-33
     }
 
     body#page-course-view-tiles.course-33
-    #multi_section_tiles > li,
+    #multi_section_tiles > li.tile,
     body#page-course-view-tiles.course-33
     #multi_section_tiles .tile-link {
 
@@ -1512,7 +1512,7 @@ body#page-course-view-tiles.course-33
 @media (prefers-reduced-motion: reduce) {
 
     body#page-course-view-tiles.course-33
-    #multi_section_tiles > li {
+    #multi_section_tiles > li.tile {
 
         transition: none !important;
 
@@ -1522,116 +1522,152 @@ body#page-course-view-tiles.course-33
 
 
 
-/* =====================================================
-   UNIVALLE - CURSO 33
-   CORRECCIÓN DE DISTRIBUCIÓN DE MOSAICOS
-   Formato Moodle Tiles
-   ===================================================== */
 
-body#page-course-view-tiles.course-33 #multi_section_tiles {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 22px !important;
-    width: 100% !important;
-    max-width: 900px !important;
-    margin: 25px auto 35px !important;
-    padding: 0 !important;
-    align-items: stretch !important;
-}
+/* ============================================================
+   22. CORRECCION ESTRUCTURAL DEL MOSAICO
+   IMPORTANTE:
+   #multi_section_tiles contiene tanto los mosaicos (.tile)
+   como los paneles de sección (.section).
+   Los paneles no deben ocupar las celdas de la cuadrícula.
+   ============================================================ */
 
-/* Cada mosaico */
+/* Ordenar primero los cuatro mosaicos */
 body#page-course-view-tiles.course-33
 #multi_section_tiles > li.tile {
-    display: block !important;
-    position: relative !important;
-    float: none !important;
-    width: 100% !important;
+    order: 1 !important;
+    grid-column: auto !important;
     min-width: 0 !important;
+    width: 100% !important;
     height: auto !important;
     min-height: 155px !important;
-    max-height: none !important;
-    margin: 0 !important;
     box-sizing: border-box !important;
 }
 
-/* Enlace del mosaico */
+/* Los paneles de contenido van después de todos los mosaicos.
+   Se conserva el display que controla Moodle (por ejemplo none). */
 body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile > a.tile-link {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    position: relative !important;
+#multi_section_tiles > li.section {
+    order: 2 !important;
+    grid-column: 1 / -1 !important;
     width: 100% !important;
-    height: 100% !important;
-    min-height: 155px !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 0 20px !important;
     box-sizing: border-box !important;
-    padding: 18px !important;
-    gap: 10px !important;
 }
 
-/* Contenedor interno */
+/* Estructura real: enlace > tile-content > icono + texto */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-link {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    min-height: 155px !important;
+    height: 100% !important;
+    gap: 18px !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+}
+
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-content {
     display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
+    flex-direction: row !important;
+    align-items: center !important;
     justify-content: flex-start !important;
-    position: relative !important;
     width: 100% !important;
+    min-width: 0 !important;
     height: auto !important;
-    gap: 9px !important;
+    gap: 18px !important;
+    box-sizing: border-box !important;
 }
 
-/* Icono */
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-top {
     position: relative !important;
     inset: auto !important;
-    flex: 0 0 auto !important;
+    flex: 0 0 76px !important;
+    width: 76px !important;
+    min-width: 76px !important;
+    height: 76px !important;
     margin: 0 !important;
 }
 
-/* Título y descripción */
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-text {
     display: block !important;
     position: relative !important;
     inset: auto !important;
-    transform: none !important;
-    width: 100% !important;
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
     height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
+    transform: none !important;
+    overflow-wrap: anywhere !important;
     text-align: left !important;
-    line-height: 1.4 !important;
+    line-height: 1.35 !important;
     box-sizing: border-box !important;
 }
 
-/* Texto interior */
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-textinner {
+    position: static !important;
     display: block !important;
-    position: relative !important;
-    inset: auto !important;
-    transform: none !important;
     width: 100% !important;
     height: auto !important;
     margin: 0 !important;
     padding: 0 !important;
+    transform: none !important;
     white-space: normal !important;
     overflow: visible !important;
     line-height: 1.4 !important;
 }
 
-/* Pantallas pequeñas */
+/* En móviles, mantener dos columnas mientras haya espacio.
+   En pantallas muy estrechas, pasar a una columna. */
 @media (max-width: 600px) {
-    body#page-course-view-tiles.course-33 #multi_section_tiles {
-        grid-template-columns: 1fr !important;
-        gap: 15px !important;
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles .tile-link {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+        min-height: 165px !important;
+        gap: 10px !important;
+        padding: 14px !important;
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles .tile-content {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles .tile-top {
+        flex-basis: 52px !important;
+        width: 52px !important;
+        min-width: 52px !important;
+        height: 52px !important;
     }
 }
 
+@media (max-width: 360px) {
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles {
+        grid-template-columns: 1fr !important;
+    }
+}
 
 /* ============================================================
    FIN DEL CSS
