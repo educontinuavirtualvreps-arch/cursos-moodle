@@ -1521,269 +1521,117 @@ body#page-course-view-tiles.course-33
 }
 
 
-/* ============================================================
-   CORRECCION DE DISTRIBUCION DE MOSAICOS
-   UNIVERSIDAD DEL VALLE - CURSO 33
-   ============================================================ */
 
-/* Contenedor principal: dos columnas equilibradas */
-body#page-course-view-tiles.course-33
-#multi_section_tiles {
+/* =====================================================
+   UNIVALLE - CURSO 33
+   CORRECCIÓN DE DISTRIBUCIÓN DE MOSAICOS
+   Formato Moodle Tiles
+   ===================================================== */
 
+body#page-course-view-tiles.course-33 #multi_section_tiles {
     display: grid !important;
-
     grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-
-    gap: 24px !important;
-
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    margin: 24px auto !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-
-}
-
-
-/* Tarjetas */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li {
-
-    display: block !important;
-
-    position: relative !important;
-
-    width: 100% !important;
-
-    min-width: 0 !important;
-
-    height: auto !important;
-
-    min-height: 170px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-
-    overflow: hidden !important;
-
-}
-
-
-/* Enlace de cada tarjeta */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li .tile-link {
-
-    display: flex !important;
-
-    flex-direction: row !important;
-
-    align-items: center !important;
-
-    justify-content: flex-start !important;
-
     gap: 22px !important;
-
     width: 100% !important;
-
-    height: 100% !important;
-
-    min-height: 170px !important;
-
-    margin: 0 !important;
-
-    padding: 24px !important;
-
-    box-sizing: border-box !important;
-
+    max-width: 900px !important;
+    margin: 25px auto 35px !important;
+    padding: 0 !important;
+    align-items: stretch !important;
 }
 
+/* Cada mosaico */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile {
+    display: block !important;
+    position: relative !important;
+    float: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    min-height: 155px !important;
+    max-height: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
 
-/* Icono: mantiene su tamaño */
+/* Enlace del mosaico */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile > a.tile-link {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    position: relative !important;
+    width: 100% !important;
+    height: 100% !important;
+    min-height: 155px !important;
+    box-sizing: border-box !important;
+    padding: 18px !important;
+    gap: 10px !important;
+}
+
+/* Contenedor interno */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-content {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    gap: 9px !important;
+}
+
+/* Icono */
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-top {
-
-    display: flex !important;
-
-    flex: 0 0 76px !important;
-
-    width: 76px !important;
-
-    min-width: 76px !important;
-
-    height: 76px !important;
-
+    position: relative !important;
+    inset: auto !important;
+    flex: 0 0 auto !important;
     margin: 0 !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
 }
 
-
-/* Contenedor de textos */
+/* Título y descripción */
 body#page-course-view-tiles.course-33
 #multi_section_tiles .tile-text {
-
     display: block !important;
-
-    position: static !important;
-
-    flex: 1 1 0% !important;
-
-    width: auto !important;
-
-    min-width: 0 !important;
-
-    max-width: 100% !important;
-
-    height: auto !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-
-    white-space: normal !important;
-
-    overflow: visible !important;
-
-    overflow-wrap: break-word !important;
-
-    word-break: normal !important;
-
-    text-align: left !important;
-
-    font-size: 19px !important;
-
-    font-weight: 700 !important;
-
-    line-height: 1.35 !important;
-
-}
-
-
-/* Descripciones: debajo del titulo */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-text::after {
-
-    display: block !important;
-
-    position: static !important;
-
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
     width: 100% !important;
-
-    max-width: 100% !important;
-
     height: auto !important;
-
-    margin: 10px 0 0 !important;
-
+    margin: 0 !important;
     padding: 0 !important;
-
+    text-align: left !important;
+    line-height: 1.4 !important;
     box-sizing: border-box !important;
+}
 
+/* Texto interior */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-textinner {
+    display: block !important;
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
     white-space: normal !important;
-
     overflow: visible !important;
-
-    overflow-wrap: break-word !important;
-
-    font-size: 14px !important;
-
-    font-weight: 400 !important;
-
-    line-height: 1.55 !important;
-
+    line-height: 1.4 !important;
 }
 
-
-/* ============================================================
-   TABLET Y MOVIL
-   ============================================================ */
-
-@media (max-width: 768px) {
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-
-        gap: 14px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li .tile-link {
-
-        gap: 14px !important;
-
-        padding: 16px !important;
-
-        min-height: 155px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-top {
-
-        flex: 0 0 55px !important;
-
-        width: 55px !important;
-
-        min-width: 55px !important;
-
-        height: 55px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-text {
-
-        font-size: 16px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-text::after {
-
-        font-size: 12px !important;
-
-    }
-
-}
-
-
-/* Moviles pequeños: una columna */
-@media (max-width: 480px) {
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-
+/* Pantallas pequeñas */
+@media (max-width: 600px) {
+    body#page-course-view-tiles.course-33 #multi_section_tiles {
         grid-template-columns: 1fr !important;
-
-        gap: 14px !important;
-
+        gap: 15px !important;
     }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li .tile-link {
-
-        min-height: 140px !important;
-
-        padding: 18px !important;
-
-    }
-
 }
+
 
 /* ============================================================
    FIN DEL CSS
