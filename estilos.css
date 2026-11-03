@@ -1823,3 +1823,165 @@ body#page-course-view-tiles.course-33 #module-322 {
 }
 
 /* FIN DEL AJUSTE DE ANCHO Y DISTRIBUCION */
+
+
+/* ==========================================================
+   UNIVERSIDAD DEL VALLE - CURSO 33
+   ORGANIZACION DE MOSAICOS Y SECCIONES
+   ========================================================== */
+
+/* Contenedor principal */
+body#page-course-view-tiles.course-33 #multi_section_tiles {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    grid-auto-flow: row !important;
+    gap: 18px 24px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    list-style: none !important;
+    align-items: stretch !important;
+}
+
+/* Los cuatro mosaicos siempre antes de las secciones */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:not(.spacer) {
+    order: 1 !important;
+    grid-column: auto !important;
+    display: block !important;
+    position: relative !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 140px !important;
+    height: auto !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Ocultar los elementos vacíos que Moodle intercala */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile.spacer {
+    display: none !important;
+}
+
+/* Enlaces de los mosaicos */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:not(.spacer) > a.tile-link {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 140px !important;
+    height: 100% !important;
+    padding: 20px !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+}
+
+/* Distribución interna */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-content {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Iconos */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-top {
+    flex: 0 0 auto !important;
+}
+
+/* Texto */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-text {
+    flex: 1 1 auto !important;
+    min-width: 0 !important;
+    width: auto !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+}
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-textinner {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow: visible !important;
+    white-space: normal !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Títulos de los mosaicos */
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-textinner h3 {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    font-size: 23px !important;
+    line-height: 1.3 !important;
+    white-space: normal !important;
+    overflow: visible !important;
+    overflow-wrap: break-word !important;
+}
+
+/* Las secciones van después de los cuatro mosaicos */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.section.course-section {
+    order: 2 !important;
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    position: relative !important;
+    inset: auto !important;
+    transform: none !important;
+}
+
+/* El contenido de la sección utiliza todo el ancho */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.section.course-section
+.format-tiles-cm-list {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* No recortar el contenido de las actividades */
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.section.course-section .activity-wrapper {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    body#page-course-view-tiles.course-33 #multi_section_tiles {
+        grid-template-columns: minmax(0, 1fr) !important;
+        gap: 12px !important;
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles > li.tile:not(.spacer) {
+        min-height: 110px !important;
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles > li.tile:not(.spacer) > a.tile-link {
+        min-height: 110px !important;
+        padding: 15px !important;
+    }
+}
+
