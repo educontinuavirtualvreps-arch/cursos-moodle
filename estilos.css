@@ -1985,3 +1985,71 @@ body#page-course-view-tiles.course-33
     }
 }
 
+/* ==========================================
+   BIENVENIDA UNIVALLE - CURSO 33
+   Imagen de fondo con texto superpuesto
+   ========================================== */
+
+body#page-course-view-tiles.course-33 .uv-welcome {
+    position: relative !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    min-height: 300px !important;
+    padding: 45px 55px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+    border-radius: 16px !important;
+
+    background:
+      linear-gradient(
+        90deg,
+        rgba(17, 36, 75, 0.72),
+        rgba(17, 36, 75, 0.18)
+      ),
+      url("https://educontinuavirtual.cloudunivalle.edu.co/draftfile.php/181/user/draft/908293939/Banner%20abstracto%20con%20curvas%20y%20degradados%20relucientes.png")
+      center center / cover no-repeat !important;
+}
+
+/* Contenido siempre por encima del fondo */
+body#page-course-view-tiles.course-33 .uv-welcome-content {
+    position: relative !important;
+    z-index: 2 !important;
+    width: 100% !important;
+    max-width: 850px !important;
+}
+
+/* Título */
+body#page-course-view-tiles.course-33 .uv-welcome-content h2 {
+    color: #ffffff !important;
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+    margin: 0 0 20px 0 !important;
+}
+
+/* Párrafos */
+body#page-course-view-tiles.course-33 .uv-welcome-content p {
+    color: #ffffff !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    margin: 0 0 12px 0 !important;
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+    body#page-course-view-tiles.course-33 .uv-welcome {
+        min-height: 320px !important;
+        padding: 28px 22px !important;
+        background-position: center center !important;
+    }
+
+    body#page-course-view-tiles.course-33 .uv-welcome-content h2 {
+        font-size: 23px !important;
+    }
+
+    body#page-course-view-tiles.course-33 .uv-welcome-content p {
+        font-size: 15px !important;
+    }
+}
+
