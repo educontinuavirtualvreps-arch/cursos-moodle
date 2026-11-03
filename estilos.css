@@ -538,3 +538,811 @@ body.path-admin-tool-policy .page-header-headings {
 body.editing #wdm_course-stats {
     display: flex !important;
 }
+
+
+
+/* ============================================================
+   PERSONALIZACION COMPLETA DEL CURSO 33
+   ============================================================ */
+
+
+/* ============================================================
+   01. IDENTIDAD VISUAL
+   ============================================================ */
+
+body#page-course-view-tiles.course-33 {
+
+    --uv-red: #D71920;
+    --uv-red-dark: #B5121B;
+    --uv-red-light: #FFF0F0;
+
+    --uv-blue: #1689E8;
+    --uv-blue-light: #EAF3FF;
+
+    --uv-green: #299B48;
+    --uv-green-light: #EAF7ED;
+
+    --uv-purple: #8439BD;
+    --uv-purple-light: #F5EDFC;
+
+    --uv-teal: #16AEB6;
+    --uv-teal-light: #E8F8F8;
+
+    --uv-orange: #F5A623;
+    --uv-orange-light: #FFF4E4;
+
+    --uv-dark: #18243A;
+    --uv-muted: #64748B;
+
+    --uv-background: #F4F6FA;
+    --uv-white: #FFFFFF;
+    --uv-border: #E5EAF1;
+
+    --uv-radius: 15px;
+
+    background: var(--uv-background);
+    color: var(--uv-dark);
+}
+
+
+/* ============================================================
+   02. FONDO GENERAL
+   ============================================================ */
+
+body#page-course-view-tiles.course-33 #page {
+    background: var(--uv-background);
+}
+
+body#page-course-view-tiles.course-33 #page-content {
+    background: transparent;
+}
+
+body#page-course-view-tiles.course-33 #region-main {
+    background: transparent;
+    border: none;
+}
+
+body#page-course-view-tiles.course-33 .main-inner {
+    max-width: 1450px;
+    margin: 0 auto;
+}
+
+body#page-course-view-tiles.course-33 #topofscroll {
+    background: transparent;
+}
+
+
+/* ============================================================
+   03. BANNER PRINCIPAL
+   CONSERVA LA IMAGEN ORIGINAL DEL CURSO
+   ============================================================ */
+
+body#page-course-view-tiles.course-33 #page-header {
+    overflow: hidden;
+    border-radius: 13px;
+    margin-bottom: 15px;
+}
+
+/* Capa de contraste sobre la imagen original */
+
+body#page-course-view-tiles.course-33
+#page-header > .position-absolute.w-100.h-100 {
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(120, 0, 10, .32),
+            rgba(0, 0, 0, .12) 60%,
+            rgba(0, 0, 0, .20)
+        ) !important;
+
+}
+
+/* Título del curso */
+
+body#page-course-view-tiles.course-33
+#page-header .page-context-header h1,
+body#page-course-view-tiles.course-33
+#page-header .page-context-header h2 {
+
+    color: #FFFFFF;
+    font-weight: 800;
+    text-shadow: 0 2px 8px rgba(0,0,0,.35);
+
+}
+
+/* Nombre del administrador */
+
+body#page-course-view-tiles.course-33
+#page-header .page-context-header {
+
+    color: #FFFFFF;
+
+}
+
+
+/* ============================================================
+   04. NAVEGACION MOODLE
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.secondary-navigation {
+
+    background: #FFFFFF;
+    border: 1px solid var(--uv-border);
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(20,40,70,.05);
+    margin: 15px 0 25px;
+
+}
+
+body#page-course-view-tiles.course-33
+.secondary-navigation .nav-link {
+
+    color: var(--uv-dark);
+    font-weight: 600;
+    padding: 14px 18px;
+    transition: .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.secondary-navigation .nav-link:hover {
+
+    color: var(--uv-red);
+    background: var(--uv-red-light);
+
+}
+
+body#page-course-view-tiles.course-33
+.secondary-navigation .nav-link.active {
+
+    color: var(--uv-red);
+    font-weight: 750;
+    border-bottom: 3px solid var(--uv-red);
+    background: transparent;
+
+}
+
+
+/* ============================================================
+   05. SECCIONES GENERALES
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.course-section {
+
+    background: #FFFFFF;
+    border: 1px solid var(--uv-border);
+    border-radius: var(--uv-radius);
+    padding: 20px;
+    margin-bottom: 20px;
+
+    box-shadow: 0 4px 16px rgba(20,40,70,.045);
+
+    transition: box-shadow .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.course-section .sectionname {
+
+    font-size: 21px;
+    font-weight: 800;
+    color: var(--uv-dark);
+
+}
+
+body#page-course-view-tiles.course-33
+.course-section .sectionname a {
+
+    color: var(--uv-dark);
+    text-decoration: none;
+
+}
+
+body#page-course-view-tiles.course-33
+.course-section .sectionname::before {
+
+    content: "";
+    display: inline-block;
+
+    width: 6px;
+    height: 25px;
+
+    background: var(--uv-red);
+    border-radius: 6px;
+
+    margin-right: 12px;
+    vertical-align: middle;
+
+}
+
+
+/* ============================================================
+   06. OCULTAR AVISOS
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.activity-item[data-activityname="Avisos"] {
+
+    display: none !important;
+
+}
+
+
+/* ============================================================
+   07. TARJETA DE MATRICULA
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.activity-item[data-activityname*="Matricúlate"] {
+
+    background: var(--uv-red-light);
+    border: 1px solid #F5D0D0;
+    border-left: 5px solid var(--uv-red);
+
+    border-radius: 14px;
+    padding: 17px;
+
+    margin: 12px 0;
+
+    transition: .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.activity-item[data-activityname*="Matricúlate"]:hover {
+
+    box-shadow: 0 6px 18px rgba(215,25,32,.10);
+    transform: translateY(-2px);
+
+}
+
+
+/* ============================================================
+   08. MOSAICOS PRINCIPALES
+   SELECTORES CONFIRMADOS EN TU INSPECCION HTML
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles.tiles {
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 17px !important;
+
+    width: 100% !important;
+
+    margin: 20px auto !important;
+    padding: 0 !important;
+
+    align-items: stretch;
+
+}
+
+
+/* Cada mosaico */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles.tiles > li.tile {
+
+    display: block !important;
+
+    width: 100% !important;
+    min-width: 0 !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--uv-border);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    min-height: 155px;
+
+    box-shadow: 0 5px 18px rgba(20,40,70,.07);
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+/* Efecto al pasar el cursor */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles.tiles > li.tile:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 12px 25px rgba(20,40,70,.13);
+
+}
+
+
+/* Enlace interno */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-link {
+
+    display: flex !important;
+
+    width: 100%;
+    min-height: 155px;
+
+    height: 100%;
+
+    text-decoration: none !important;
+
+}
+
+
+/* Contenido de cada mosaico */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-content {
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    width: 100%;
+    min-height: 155px;
+
+    padding: 22px !important;
+
+    background: #FFFFFF;
+
+}
+
+
+/* Texto de los mosaicos */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-text {
+
+    color: var(--uv-dark);
+
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+
+/* Iconos */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles .tile-top {
+
+    margin-bottom: 12px;
+
+}
+
+
+/* ============================================================
+   09. COLORES INDEPENDIENTES DE LOS MOSAICOS
+   ============================================================ */
+
+/* RECURSOS - AZUL */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(1) {
+
+    border-bottom: 6px solid var(--uv-blue);
+
+}
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(1) .tile-content {
+
+    background:
+        linear-gradient(120deg, #FFFFFF 60%, #EAF3FF);
+
+}
+
+
+/* ACTIVIDADES - VERDE */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(2) {
+
+    border-bottom: 6px solid var(--uv-green);
+
+}
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(2) .tile-content {
+
+    background:
+        linear-gradient(120deg, #FFFFFF 60%, #EAF7ED);
+
+}
+
+
+/* H5P - MORADO */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(3) {
+
+    border-bottom: 6px solid var(--uv-purple);
+
+}
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(3) .tile-content {
+
+    background:
+        linear-gradient(120deg, #FFFFFF 60%, #F5EDFC);
+
+}
+
+
+/* INTELIGENCIA ARTIFICIAL - NARANJA */
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(4) {
+
+    border-bottom: 6px solid var(--uv-orange);
+
+}
+
+body#page-course-view-tiles.course-33
+#multi_section_tiles > li.tile:nth-child(4) .tile-content {
+
+    background:
+        linear-gradient(120deg, #FFFFFF 60%, #FFF4E4);
+
+}
+
+
+/* ============================================================
+   10. ACTIVIDADES Y RECURSOS INTERNOS
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.activity-item {
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--uv-border);
+
+    border-radius: 12px;
+
+    padding: 12px 15px;
+
+    margin: 10px 0;
+
+    transition: .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.activity-item:hover {
+
+    background: #FAFCFF;
+
+    box-shadow: 0 4px 12px rgba(20,40,70,.07);
+
+}
+
+body#page-course-view-tiles.course-33
+.activityname a {
+
+    color: var(--uv-dark);
+
+    font-weight: 650;
+
+    text-decoration: none;
+
+}
+
+body#page-course-view-tiles.course-33
+.activityname a:hover {
+
+    color: var(--uv-red);
+
+}
+
+body#page-course-view-tiles.course-33
+.activityicon {
+
+    border-radius: 9px;
+
+}
+
+
+/* ============================================================
+   11. TARJETAS DE ACTIVIDAD TILES
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.activity-grid.tiles-activity-container {
+
+    border-radius: 12px;
+
+    transition: .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.activity-grid.tiles-activity-container:hover {
+
+    background: #F4F8FF;
+
+}
+
+
+/* ============================================================
+   12. BOTONES INSTITUCIONALES
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.btn-primary {
+
+    background: var(--uv-red);
+
+    border-color: var(--uv-red);
+
+    border-radius: 30px;
+
+    padding: 9px 20px;
+
+    font-weight: 700;
+
+    transition: .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+.btn-primary:hover {
+
+    background: var(--uv-red-dark);
+
+    border-color: var(--uv-red-dark);
+
+    transform: translateY(-2px);
+
+}
+
+body#page-course-view-tiles.course-33
+.btn-outline-primary {
+
+    color: var(--uv-red);
+
+    border-color: var(--uv-red);
+
+    border-radius: 30px;
+
+}
+
+
+/* ============================================================
+   13. TARJETAS Y BLOQUES LATERALES
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.block {
+
+    background: #FFFFFF;
+
+    border: 1px solid var(--uv-border);
+
+    border-radius: 15px;
+
+    padding: 13px;
+
+    margin-bottom: 17px;
+
+    box-shadow: 0 4px 14px rgba(20,40,70,.05);
+
+}
+
+body#page-course-view-tiles.course-33
+.block .card-title {
+
+    color: var(--uv-dark);
+
+    font-weight: 800;
+
+}
+
+
+/* ============================================================
+   14. ENLACES
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+a {
+
+    transition: color .2s ease;
+
+}
+
+body#page-course-view-tiles.course-33
+a:hover {
+
+    color: var(--uv-red);
+
+}
+
+
+/* ============================================================
+   15. TARJETAS DE BIENVENIDA
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+.uv-welcome {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 28px;
+
+    min-height: 190px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #EAF3FF,
+            #FFFFFF 65%,
+            #FFF4E4
+        );
+
+    border: 1px solid var(--uv-border);
+
+    border-left: 6px solid var(--uv-red);
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 17px rgba(20,40,70,.07);
+
+    margin: 15px 0 25px;
+
+}
+
+body#page-course-view-tiles.course-33
+.uv-welcome-icon {
+
+    width: 90px;
+
+    height: 90px;
+
+    min-width: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FFFFFF;
+
+    border: 2px solid var(--uv-red);
+
+    color: var(--uv-red);
+
+    font-size: 42px;
+
+}
+
+body#page-course-view-tiles.course-33
+.uv-welcome-content h2 {
+
+    color: #07549A;
+
+    font-size: 24px;
+
+    font-weight: 800;
+
+    margin-bottom: 12px;
+
+}
+
+body#page-course-view-tiles.course-33
+.uv-welcome-content p {
+
+    color: #35465D;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+/* ============================================================
+   16. RESPONSIVE - TABLET Y CELULAR
+   ============================================================ */
+
+@media (max-width: 767px) {
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles.tiles {
+
+        grid-template-columns: 1fr !important;
+
+        gap: 12px !important;
+
+    }
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles > li.tile {
+
+        min-height: 125px;
+
+    }
+
+    body#page-course-view-tiles.course-33
+    .course-section {
+
+        padding: 13px;
+
+    }
+
+    body#page-course-view-tiles.course-33
+    .uv-welcome {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 20px;
+
+    }
+
+    body#page-course-view-tiles.course-33
+    .uv-welcome-content h2 {
+
+        font-size: 20px;
+
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1100px) {
+
+    body#page-course-view-tiles.course-33
+    #multi_section_tiles.tiles {
+
+        grid-template-columns: repeat(2, 1fr) !important;
+
+    }
+
+}
+
+
+/* ============================================================
+   17. ACCESIBILIDAD
+   ============================================================ */
+
+body#page-course-view-tiles.course-33
+a:focus-visible,
+body#page-course-view-tiles.course-33
+button:focus-visible {
+
+    outline: 3px solid var(--uv-blue);
+
+    outline-offset: 3px;
+
+}
+
+
+/* ============================================================
+   FIN - PERSONALIZACION UNIVALLE CURSO 33
+   ============================================================ */
+
