@@ -1673,3 +1673,153 @@ body#page-course-view-tiles.course-33
    FIN DEL CSS
    UNIVERSIDAD DEL VALLE - CURSO 33
    ============================================================ */
+
+/* ============================================================
+   UNIVALLE - CURSO 33: AJUSTE DE ANCHO Y DISTRIBUCION
+   Prevalece sobre las reglas anteriores del curso 33.
+   ============================================================ */
+
+body#page-course-view-tiles.course-33 {
+    overflow-x: hidden !important;
+}
+
+/* Ampliar el contenedor central del curso */
+body#page-course-view-tiles.course-33 #page.drawers .main-inner,
+body#page-course-view-tiles.course-33 #page-content,
+body#page-course-view-tiles.course-33 #topofscroll,
+body#page-course-view-tiles.course-33 .main-inner,
+body#page-course-view-tiles.course-33 .main-inner > .container,
+body#page-course-view-tiles.course-33 .main-inner .container,
+body#page-course-view-tiles.course-33 .course-content {
+    width: 100% !important;
+    max-width: 1320px !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 .main-inner > .container,
+body#page-course-view-tiles.course-33 .main-inner .container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+body#page-course-view-tiles.course-33 .course-content {
+    padding: 18px clamp(12px, 2.5vw, 32px) 35px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+/* Dos columnas para los cuatro mosaicos */
+body#page-course-view-tiles.course-33 #multi_section_tiles {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+    gap: 16px !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 18px 0 24px !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Solo las tarjetas son celdas de mosaico */
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile {
+    grid-column: auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 142px !important;
+    height: auto !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    min-height: 142px !important;
+    height: 100% !important;
+    gap: clamp(10px, 1.5vw, 20px) !important;
+    padding: clamp(12px, 1.8vw, 22px) !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-top {
+    flex: 0 0 64px !important;
+    width: 64px !important;
+    min-width: 64px !important;
+    height: 64px !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-text {
+    flex: 1 1 0 !important;
+    min-width: 0 !important;
+    overflow-wrap: anywhere !important;
+    font-size: clamp(15px, 1.4vw, 19px) !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-text::after {
+    font-size: clamp(11px, 1vw, 13px) !important;
+}
+
+/* Cada panel de sección reserva el ancho completo debajo de los mosaicos.
+   No se fuerza su visibilidad: Moodle/Tiles controla qué sección se abre. */
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section {
+    grid-column: 1 / -1 !important;
+    order: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .content,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .section-content,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity-item {
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Mantener bienvenida general debajo del área de mosaicos */
+body#page-course-view-tiles.course-33 #module-322 {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    body#page-course-view-tiles.course-33 #multi_section_tiles {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 12px !important;
+    }
+
+    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile,
+    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
+        min-height: 132px !important;
+    }
+
+    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
+        gap: 10px !important;
+        padding: 12px !important;
+    }
+
+    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-top {
+        flex-basis: 48px !important;
+        width: 48px !important;
+        min-width: 48px !important;
+        height: 48px !important;
+    }
+}
+
+/* Teléfonos muy estrechos */
+@media (max-width: 380px) {
+    body#page-course-view-tiles.course-33 #multi_section_tiles {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* FIN DEL AJUSTE DE ANCHO Y DISTRIBUCION */
