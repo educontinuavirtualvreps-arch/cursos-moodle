@@ -2090,3 +2090,78 @@ body.course-33 #page-header {
     background-position: center !important;
     background-repeat: no-repeat !important;
 }
+
+
+/* ==========================================================
+   UNIVERSIDAD DEL VALLE - CURSO 33
+   AJUSTE FINAL DEL BANNER Y BOTONES DE SECCION
+   ========================================================== */
+
+/* 1. OCULTAR BOTONES DE TRES PUNTOS Y CERRAR (X) */
+body#page-course-view-tiles.course-33
+.above-tiles-buttons {
+    display: none !important;
+}
+
+/* Respaldo para ocultar los controles de sección */
+body#page-course-view-tiles.course-33
+.sectionbutton {
+    display: none !important;
+}
+
+/* 2. CENTRAR EL BANNER SUPERIOR */
+body#page-course-view-tiles.course-33
+header#page-header {
+    display: block !important;
+    width: calc(100% - 40px) !important;
+    max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* 3. CENTRAR EL CONTENEDOR INTERNO DEL BANNER */
+body#page-course-view-tiles.course-33
+#page-header .header-maxwidth,
+body#page-course-view-tiles.course-33
+#page-header.header-maxwidth {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* 4. ELIMINAR BORDES LATERALES Y SOMBRAS */
+body#page-course-view-tiles.course-33
+#page-header,
+body#page-course-view-tiles.course-33
+#page-header .header-wrapper {
+    border-left: none !important;
+    border-right: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* 5. CONSERVAR LA IMAGEN ORIGINAL */
+body#page-course-view-tiles.course-33
+#page-header {
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    overflow: hidden !important;
+    border-radius: 12px !important;
+}
+
+/* 6. AJUSTE PARA TABLETAS Y CELULARES */
+@media (max-width: 768px) {
+    body#page-course-view-tiles.course-33
+    header#page-header {
+        width: calc(100% - 20px) !important;
+    }
+}
+
+/* ==========================================================
+   FIN DE AJUSTES - CURSO 33
+   ========================================================== */
+
