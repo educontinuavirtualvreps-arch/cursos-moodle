@@ -2053,192 +2053,112 @@ body#page-course-view-tiles.course-33 .uv-welcome-content p {
     }
 }
 
-/* =========================================
-   SOLO CURSO 33
-   ========================================= */
+/* ============================================================
+   AJUSTES FINALES CONSOLIDADOS - SOLO CURSO 33
+   Corrige el ancho de bienvenida y elimina reglas contradictorias.
+   ============================================================ */
 
-/* 1. Ocultar nombre del curso */
-body.course-33 #page-header .page-header-headings {
-    display: none !important;
-}
-
-/* 2. Ocultar categoría */
-body.course-33 #page-header .category {
-    display: none !important;
-}
-
-/* 3. Ocultar profesor */
-body.course-33 #page-header .instructor-info,
-body.course-33 #page-header .instructor-info-stat-container {
-    display: none !important;
-}
-
-/* 4. Ocultar acciones masivas */
-body.course-33 #page-header .header-sub-section {
-    display: none !important;
-}
-
-/* 5. Eliminar oscurecimiento de la imagen */
-body.course-33 #page-header .position-absolute.w-100.h-100 {
-    background: transparent !important;
-    background-image: none !important;
-}
-
-/* 6. Mantener la imagen clara */
-body.course-33 #page-header {
-    background-size: cover !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-}
-
-
-/* ==========================================================
-   UNIVERSIDAD DEL VALLE - CURSO 33
-   AJUSTE FINAL DEL BANNER Y BOTONES DE SECCION
-   ========================================================== */
-
-/* 1. OCULTAR BOTONES DE TRES PUNTOS Y CERRAR (X) */
-body#page-course-view-tiles.course-33
-.above-tiles-buttons {
-    display: none !important;
-}
-
-/* Respaldo para ocultar los controles de sección */
-body#page-course-view-tiles.course-33
-.sectionbutton {
-    display: none !important;
-}
-
-/* 2. CENTRAR EL BANNER SUPERIOR */
-body#page-course-view-tiles.course-33
-header#page-header {
-    display: block !important;
+/* Banner superior: conservar imagen, centrar y aclarar */
+body#page-course-view-tiles.course-33 #page-header {
     width: calc(100% - 40px) !important;
     max-width: 1320px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* 3. CENTRAR EL CONTENEDOR INTERNO DEL BANNER */
-body#page-course-view-tiles.course-33
-#page-header .header-maxwidth,
-body#page-course-view-tiles.course-33
-#page-header.header-maxwidth {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* 4. ELIMINAR BORDES LATERALES Y SOMBRAS */
-body#page-course-view-tiles.course-33
-#page-header,
-body#page-course-view-tiles.course-33
-#page-header .header-wrapper {
-    border-left: none !important;
-    border-right: none !important;
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-/* 5. CONSERVAR LA IMAGEN ORIGINAL */
-body#page-course-view-tiles.course-33
-#page-header {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
-    overflow: hidden !important;
     border-radius: 12px !important;
-}
-
-/* 6. AJUSTE PARA TABLETAS Y CELULARES */
-@media (max-width: 768px) {
-    body#page-course-view-tiles.course-33
-    header#page-header {
-        width: calc(100% - 20px) !important;
-    }
-}
-
-/* ==========================================================
-   FIN DE AJUSTES - CURSO 33
-   ========================================================== */
-
-/* ==========================================================
-   CURSO 33 - CENTRAR CONTENEDOR DE BIENVENIDA
-   ========================================================== */
-
-/* Centrar el módulo completo */
-body#page-course-view-tiles.course-33
-#module-322 {
-    display: block !important;
-    width: 100% !important;
-    max-width: 1320px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    float: none !important;
-    box-sizing: border-box !important;
-}
-
-/* Centrar la tarjeta exterior */
-body#page-course-view-tiles.course-33
-#module-322 .activity-item {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* Centrar el banner de bienvenida */
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome {
-    display: flex !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* Evitar desplazamientos laterales */
-body#page-course-view-tiles.course-33
-#module-322 .activity-content,
-body#page-course-view-tiles.course-33
-#module-322 .activity-information {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* ==========================================================
-   CURSO 33 - ELIMINAR FRANJAS ROJAS DE BIENVENIDA
-   ========================================================== */
-
-/* Quitar bordes y franjas decorativas */
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome {
-    border: none !important;
-    border-left: none !important;
-    outline: none !important;
+    overflow: hidden !important;
     box-shadow: none !important;
 }
 
-/* Eliminar posibles franjas creadas con pseudoelementos */
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome::before,
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome::after {
-    display: none !important;
-    content: none !important;
+body#page-course-view-tiles.course-33 #page-header .header-maxwidth,
+body#page-course-view-tiles.course-33 #page-header.header-maxwidth {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
 }
 
-/* Eliminar bordes rojos del contenedor exterior */
-body#page-course-view-tiles.course-33
-#module-322 .activity-item {
+/* Quitar el oscurecimiento superpuesto sin borrar la imagen */
+body#page-course-view-tiles.course-33 #page-header .position-absolute.w-100.h-100 {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* Ocultar textos y datos del banner */
+body#page-course-view-tiles.course-33 #page-header .page-header-headings,
+body#page-course-view-tiles.course-33 #page-header .category,
+body#page-course-view-tiles.course-33 #page-header .instructor-info,
+body#page-course-view-tiles.course-33 #page-header .instructor-info-stat-container,
+body#page-course-view-tiles.course-33 #page-header .header-sub-section {
+    display: none !important;
+}
+
+/* Ocultar los controles de opciones que aparecen sobre los mosaicos */
+body#page-course-view-tiles.course-33 .above-tiles-buttons {
+    display: none !important;
+}
+
+/* Dar todo el ancho disponible a la sección que contiene la bienvenida */
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section.course-section {
+    grid-column: 1 / -1 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .format-tiles-cm-list,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity-wrapper,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .content,
+body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .section-content {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+/* Centrar y expandir el módulo de bienvenida */
+body#page-course-view-tiles.course-33 #module-322 {
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 28px auto 18px !important;
+    padding: 0 !important;
+    justify-self: stretch !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-tiles.course-33 #module-322 .activity-item {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* Mantener el fondo claro y quitar la franja roja izquierda */
+body#page-course-view-tiles.course-33 #module-322 .uv-welcome {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
     border-left: none !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    body#page-course-view-tiles.course-33 #page-header {
+        width: calc(100% - 20px) !important;
+    }
 }
