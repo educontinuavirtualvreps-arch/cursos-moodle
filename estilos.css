@@ -2053,3 +2053,40 @@ body#page-course-view-tiles.course-33 .uv-welcome-content p {
     }
 }
 
+/* =========================================
+   SOLO CURSO 33
+   ========================================= */
+
+/* 1. Ocultar nombre del curso */
+body.course-33 #page-header .page-header-headings {
+    display: none !important;
+}
+
+/* 2. Ocultar categoría */
+body.course-33 #page-header .category {
+    display: none !important;
+}
+
+/* 3. Ocultar profesor */
+body.course-33 #page-header .instructor-info,
+body.course-33 #page-header .instructor-info-stat-container {
+    display: none !important;
+}
+
+/* 4. Ocultar acciones masivas */
+body.course-33 #page-header .header-sub-section {
+    display: none !important;
+}
+
+/* 5. Eliminar oscurecimiento de la imagen */
+body.course-33 #page-header .position-absolute.w-100.h-100 {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* 6. Mantener la imagen clara */
+body.course-33 #page-header {
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
