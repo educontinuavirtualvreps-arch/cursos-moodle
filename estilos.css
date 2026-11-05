@@ -2165,3 +2165,80 @@ body#page-course-view-tiles.course-33
    FIN DE AJUSTES - CURSO 33
    ========================================================== */
 
+/* ==========================================================
+   CURSO 33 - CENTRAR CONTENEDOR DE BIENVENIDA
+   ========================================================== */
+
+/* Centrar el módulo completo */
+body#page-course-view-tiles.course-33
+#module-322 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    box-sizing: border-box !important;
+}
+
+/* Centrar la tarjeta exterior */
+body#page-course-view-tiles.course-33
+#module-322 .activity-item {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Centrar el banner de bienvenida */
+body#page-course-view-tiles.course-33
+#module-322 .uv-welcome {
+    display: flex !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* Evitar desplazamientos laterales */
+body#page-course-view-tiles.course-33
+#module-322 .activity-content,
+body#page-course-view-tiles.course-33
+#module-322 .activity-information {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+/* ==========================================================
+   CURSO 33 - ELIMINAR FRANJAS ROJAS DE BIENVENIDA
+   ========================================================== */
+
+/* Quitar bordes y franjas decorativas */
+body#page-course-view-tiles.course-33
+#module-322 .uv-welcome {
+    border: none !important;
+    border-left: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Eliminar posibles franjas creadas con pseudoelementos */
+body#page-course-view-tiles.course-33
+#module-322 .uv-welcome::before,
+body#page-course-view-tiles.course-33
+#module-322 .uv-welcome::after {
+    display: none !important;
+    content: none !important;
+}
+
+/* Eliminar bordes rojos del contenedor exterior */
+body#page-course-view-tiles.course-33
+#module-322 .activity-item {
+    border-left: none !important;
+}
