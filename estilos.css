@@ -1583,28 +1583,40 @@ body.course-33 .above-tiles-buttons {
 
 
 
-/* RECURSOS - MARCO AZUL */
-.section-item:has(.course-section-header[data-number="1"]) {
-    background-color: #eaf3ff !important;
+
+
+/* =====================================
+   RECURSOS - MARCO AZUL COMPLETO
+   ===================================== */
+
+/* Marco exterior */
+#section-1 > .section-item {
     border: 2px solid #1688E8 !important;
     border-radius: 14px !important;
+    background: #eaf3ff !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
 /* Encabezado azul */
-.section-item:has(.course-section-header[data-number="1"]) .course-section-header {
+#section-1 > .section-item > .course-section-header {
     background-color: #eaf3ff !important;
-    border-radius: 12px 12px 0 0 !important;
+    border-bottom: 1px solid #d5e7fa !important;
+    border-left: 3px solid #1688E8 !important;
 }
 
-/* Contenido blanco */
-.section-item:has(.course-section-header[data-number="1"]) > .content {
+/* Área de contenido blanca */
+#section-1 > .section-item > .content {
     background-color: #ffffff !important;
 }
 
-/* Actividades interiores */
-.section-item:has(.course-section-header[data-number="1"]) .activity-item,
-.section-item:has(.course-section-header[data-number="1"]) .activity-altcontent {
+/* Recursos interiores blancos */
+#section-1 .activity-item {
+    background-color: #ffffff !important;
+}
+
+/* Contenido de los recursos */
+#section-1 .activity-altcontent {
     background-color: #ffffff !important;
 }
 
@@ -1671,34 +1683,39 @@ body.course-33 .above-tiles-buttons {
     background-color: #ffffff !important;
 }
 
-/* IA - MARCO ROJO */
-.section-item:has(.course-section-header[data-number="4"]) {
-    background-color: #fff0f1 !important;
+/* =====================================
+   IA - MARCO ROJO COMPLETO
+   ===================================== */
+
+/* Marco exterior */
+#section-4 > .section-item {
     border: 2px solid #dc3545 !important;
     border-radius: 14px !important;
+    background: #fff0f1 !important;
     box-sizing: border-box !important;
+    overflow: hidden !important;
 }
 
-/* Encabezado rojo claro */
-.section-item:has(.course-section-header[data-number="4"]) .course-section-header {
+/* Encabezado rojo */
+#section-4 > .section-item > .course-section-header {
     background-color: #fff0f1 !important;
     border-bottom: 1px solid #f2d5d8 !important;
-    border-radius: 12px 12px 0 0 !important;
+    border-left: 3px solid #dc3545 !important;
 }
 
-/* Contenido interior blanco */
-.section-item:has(.course-section-header[data-number="4"]) > .content {
+/* Área de contenido blanca */
+#section-4 > .section-item > .content {
     background-color: #ffffff !important;
 }
 
 /* Actividades interiores */
-.section-item:has(.course-section-header[data-number="4"]) .activity-item,
-.section-item:has(.course-section-header[data-number="4"]) .activity-altcontent {
+#section-4 .activity-item,
+#section-4 .activity-altcontent {
     background-color: #ffffff !important;
 }
 
 /* Título */
-.section-item:has(.course-section-header[data-number="4"]) .sectionname a {
+#section-4 .sectionname a {
     color: #212529 !important;
 }
 /* ============================================================
