@@ -1583,10 +1583,8 @@ body.course-33 .above-tiles-buttons {
 
 
 
-
-
-/* Marco azul de Recursos sin alterar sus dimensiones */
-#section-1 {
+/* RECURSOS - MARCO AZUL */
+.section-item:has(.course-section-header[data-number="1"]) {
     background-color: #eaf3ff !important;
     border: 2px solid #1688E8 !important;
     border-radius: 14px !important;
@@ -1594,23 +1592,19 @@ body.course-33 .above-tiles-buttons {
 }
 
 /* Encabezado azul */
-#section-1 .course-section-header {
+.section-item:has(.course-section-header[data-number="1"]) .course-section-header {
     background-color: #eaf3ff !important;
     border-radius: 12px 12px 0 0 !important;
 }
 
-/* Mantener el área de contenido blanca */
-#section-1 > .content {
+/* Contenido blanco */
+.section-item:has(.course-section-header[data-number="1"]) > .content {
     background-color: #ffffff !important;
 }
 
-/* Actividades y recursos interiores */
-#section-1 .activity-item {
-    background-color: #ffffff !important;
-}
-
-/* Descripciones y ejercicios */
-#section-1 .activity-altcontent {
+/* Actividades interiores */
+.section-item:has(.course-section-header[data-number="1"]) .activity-item,
+.section-item:has(.course-section-header[data-number="1"]) .activity-altcontent {
     background-color: #ffffff !important;
 }
 
@@ -1677,32 +1671,34 @@ body.course-33 .above-tiles-buttons {
     background-color: #ffffff !important;
 }
 
-/* SECCIÓN 4 - IA (ROJO) */
-.section-item:has(.course-section-header[data-id="210"]) {
-    border: 1px solid #f2d5d8 !important;
-    border-radius: 12px !important;
-    overflow: hidden;
-    background-color: #ffffff !important;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+/* IA - MARCO ROJO */
+.section-item:has(.course-section-header[data-number="4"]) {
+    background-color: #fff0f1 !important;
+    border: 2px solid #dc3545 !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
 }
 
 /* Encabezado rojo claro */
-.section-item:has(.course-section-header[data-id="210"]) 
-.course-section-header {
+.section-item:has(.course-section-header[data-number="4"]) .course-section-header {
     background-color: #fff0f1 !important;
-    border-left: 3px solid #dc3545 !important;
     border-bottom: 1px solid #f2d5d8 !important;
+    border-radius: 12px 12px 0 0 !important;
 }
 
-/* Contenido blanco, conservando sus dimensiones */
-.section-item:has(.course-section-header[data-id="210"]) 
-.content {
+/* Contenido interior blanco */
+.section-item:has(.course-section-header[data-number="4"]) > .content {
     background-color: #ffffff !important;
 }
 
-/* Color del título */
-.section-item:has(.course-section-header[data-id="210"]) 
-.sectionname a {
+/* Actividades interiores */
+.section-item:has(.course-section-header[data-number="4"]) .activity-item,
+.section-item:has(.course-section-header[data-number="4"]) .activity-altcontent {
+    background-color: #ffffff !important;
+}
+
+/* Título */
+.section-item:has(.course-section-header[data-number="4"]) .sectionname a {
     color: #212529 !important;
 }
 /* ============================================================
