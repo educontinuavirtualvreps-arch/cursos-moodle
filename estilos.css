@@ -1718,12 +1718,38 @@ body.course-33 .above-tiles-buttons {
 #section-4 .sectionname a {
     color: #212529 !important;
 }
+
+
+/* ==========================================
+   FONDO INSTITUCIONAL - CURSO 33
+   Capacitación Moodle | Universidad del Valle
+========================================== */
+
+/* Fondo de la página del curso */
+body.course-33 #page.drawers {
+    background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Plantilla%20corporativa%20geom%C3%A9trica%20en%20rojo%20suave.png") !important;
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-color: #ffffff !important;
+}
+
+/* Permitir que se vea el fondo detrás del contenido */
+body.course-33 #topofscroll,
+body.course-33 #page.drawers .main-inner {
+    background-color: transparent !important;
+}
+
+/* Mantener blancas las tarjetas y secciones del curso */
+body.course-33 #region-main,
+body.course-33 .course-content .section {
+    background-color: rgba(255, 255, 255, 0.94);
+}
+
 /* ============================================================
    FIN DEL CSS
    UNIVERSIDAD DEL VALLE
    CURSO 33
    SELECCIONES PERSONALIZADAS
    ============================================================ */
-
-
-
