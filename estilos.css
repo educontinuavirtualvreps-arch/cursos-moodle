@@ -544,7 +544,7 @@ body.editing #wdm_course-stats {
    UNIVERSIDAD DEL VALLE
    CURSO 33 - EDUCACION CONTINUA
    MOODLE 4.5 / 5.X
-   FORMATO DE CURSO: MOSAICOS
+   FORMATO: TEMAS (format-topics)
    IDENTIDAD VISUAL INSTITUCIONAL
    ============================================================ */
 
@@ -553,7 +553,7 @@ body.editing #wdm_course-stats {
    01. VARIABLES INSTITUCIONALES
    ============================================================ */
 
-body#page-course-view-tiles.course-33 {
+body#page-course-view-topics.course-33 {
 
     --uv-red: #C8101E;
     --uv-red-dark: #A50E19;
@@ -579,1418 +579,214 @@ body#page-course-view-tiles.course-33 {
     --uv-radius: 14px;
 
     background-color: var(--uv-page) !important;
-
     color: var(--uv-dark);
-
-}
-
-
-/* ============================================================
-   02. AREA PRINCIPAL DEL CURSO
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#page-content {
-
-    box-sizing: border-box;
-
-}
-
-body#page-course-view-tiles.course-33
-.course-content {
-
-    width: 100% !important;
-
-    max-width: 1200px !important;
-
-    margin-left: auto !important;
-    margin-right: auto !important;
-
-    padding: 18px 24px 35px !important;
-
-    box-sizing: border-box !important;
-
-}
-
-
-/* ============================================================
-   03. BANNER ORIGINAL UNIVALLE
-   NO CAMBIAR IMAGEN NI COLORES
-   ============================================================ */
-
-/* Se conserva el banner original de Moodle.
-   No se sobrescribe background-image ni el degradado. */
-
-body#page-course-view-tiles.course-33
-#page-header {
-
-    border-radius: 12px !important;
-
-    overflow: hidden !important;
-
-    margin-bottom: 14px !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#page-header .header-maxwidth {
-
-    border-radius: 12px !important;
-
-    overflow: hidden !important;
-
-}
-
-
-/* ============================================================
-   04. MENU DE NAVEGACION DEL CURSO
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-.secondary-navigation {
-
-    background: var(--uv-white) !important;
-
-    border: 1px solid var(--uv-border) !important;
-
-    border-radius: 10px !important;
-
-    margin-bottom: 25px !important;
-
-    box-shadow: 0 2px 8px rgba(25,40,65,.04);
-
-}
-
-body#page-course-view-tiles.course-33
-.secondary-navigation .nav-link {
-
-    color: var(--uv-text) !important;
-
-    font-weight: 500 !important;
-
-    transition: color .2s ease;
-
-}
-
-body#page-course-view-tiles.course-33
-.secondary-navigation .nav-link:hover {
-
-    color: var(--uv-red) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-.secondary-navigation .nav-link.active {
-
-    color: var(--uv-red) !important;
-
-    border-bottom: 3px solid var(--uv-red) !important;
-
-    font-weight: 700 !important;
-
-}
-
-
-/* ============================================================
-   05. CONTENEDOR REAL DE MOSAICOS
-   SELECTOR: #multi_section_tiles
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles {
-
-    display: grid !important;
-
-    grid-template-columns:
-        repeat(2, minmax(0, 1fr)) !important;
-
-    gap: 20px !important;
-
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    margin: 20px auto 28px !important;
-
-    padding: 0 !important;
-
-    list-style: none !important;
-
-    box-sizing: border-box !important;
-
-}
-
-
-/* ============================================================
-   06. TARJETAS DE MOSAICOS
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile {
-
-    display: block !important;
-
-    position: relative !important;
-
-    width: 100% !important;
-
-    min-width: 0 !important;
-
-    min-height: 155px !important;
-
-    margin: 0 !important;
-
-    padding: 0 !important;
-
-    background: var(--uv-white) !important;
-
-    border: 1px solid var(--uv-border) !important;
-
-    border-radius: var(--uv-radius) !important;
-
-    overflow: hidden !important;
-
-    box-shadow:
-        0 3px 12px rgba(20,40,70,.065) !important;
-
-    transition:
-        transform .25s ease,
-        box-shadow .25s ease,
-        border-color .25s ease;
-
-}
-
-/* Interaccion */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 9px 22px rgba(20,40,70,.12) !important;
-
-}
-
-
-/* ============================================================
-   07. ENLACE INTERNO DE CADA MOSAICO
-   SELECTOR: .tile-link
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-link {
-
-    display: flex !important;
-
-    flex-direction: row !important;
-
-    align-items: center !important;
-
-    justify-content: flex-start !important;
-
-    gap: 20px !important;
-
-    width: 100% !important;
-
-    min-height: 155px !important;
-
-    padding: 20px !important;
-
-    box-sizing: border-box !important;
-
-    background: transparent !important;
-
-    text-decoration: none !important;
-
-}
-
-
-/* ============================================================
-   08. CONTENEDOR DE ICONOS
-   SELECTOR: .tile-top
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-top {
-
-    position: relative !important;
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    flex: 0 0 76px !important;
-
-    width: 76px !important;
-
-    height: 76px !important;
-
-    min-width: 76px !important;
-
-    border-radius: 50% !important;
-
-    background: #F2F4F7 !important;
-
-    overflow: hidden !important;
-
-}
-
-/* Ocultar iconografia predeterminada del formato */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-top > * {
-
-    visibility: hidden !important;
-
-}
-
-/* Icono personalizado */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-top::before {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    width: 100% !important;
-
-    height: 100% !important;
-
-    position: absolute !important;
-
-    inset: 0 !important;
-
-    color: white !important;
-
-    font-size: 22px !important;
-
-    font-weight: 800 !important;
-
-    line-height: 1 !important;
-
-}
-
-
-/* ============================================================
-   09. MOSAICO 1 - RECURSOS
-   COLOR: AZUL INSTITUCIONAL COMPLEMENTARIO
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="1"] {
-
-    border-bottom: 4px solid var(--uv-blue) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="1"] .tile-top {
-
-    background: var(--uv-blue) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="1"] .tile-top::before {
-
-    content: "";
-
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    background-size: 39px 39px;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpath d='M3 10h18'/%3E%3C/svg%3E");
-
-}
-
-
-/* ============================================================
-   10. MOSAICO 2 - ACTIVIDADES
-   COLOR: VERDE
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="2"] {
-
-    border-bottom: 4px solid var(--uv-green) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="2"] .tile-top {
-
-    background: var(--uv-green) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="2"] .tile-top::before {
-
-    content: "";
-
-    background-repeat: no-repeat;
-
-    background-position: center;
-
-    background-size: 39px 39px;
-
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M8 16v-4'/%3E%3Cpath d='M13 16V7'/%3E%3Cpath d='M18 16V4'/%3E%3C/svg%3E");
-
-}
-
-
-/* ============================================================
-   11. MOSAICO 3 - H5P
-   COLOR: MORADO
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="3"] {
-
-    border-bottom: 4px solid var(--uv-purple) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="3"] .tile-top {
-
-    background: var(--uv-purple) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="3"] .tile-top::before {
-
-    content: "H5P";
-
-    font-size: 21px !important;
-
-    font-weight: 800 !important;
-
-}
-
-
-/* ============================================================
-   12. MOSAICO 4 - INTELIGENCIA ARTIFICIAL
-   COLOR: ROJO UNIVALLE
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="4"] {
-
-    border-bottom: 4px solid var(--uv-red) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="4"] .tile-top {
-
-    background: var(--uv-red) !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="4"] .tile-top::before {
-
-    content: "IA";
-
-    font-size: 25px !important;
-
-    font-weight: 800 !important;
-
-}
-
-
-/* ============================================================
-   13. TITULOS DE LOS MOSAICOS
-   SELECTOR: .tile-text
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-text {
-
-    flex: 1 1 auto !important;
-
-    min-width: 0 !important;
-
-    color: var(--uv-dark) !important;
-
-    font-size: 19px !important;
-
-    font-weight: 700 !important;
-
-    line-height: 1.3 !important;
-
-    text-align: left !important;
-
-}
-
-
-/* ============================================================
-   14. DESCRIPCIONES DE LOS MOSAICOS
-   ============================================================ */
-
-/* RECURSOS */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="1"]
-.tile-text::after {
-
-    content:
-    "Carpeta de materiales, documentos PDF, presentaciones y archivos del curso.";
-
-    display: block;
-
-    margin-top: 9px;
-
-    color: var(--uv-muted);
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-}
-
-/* ACTIVIDADES */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="2"]
-.tile-text::after {
-
-    content:
-    "Tareas, cuestionarios, evaluaciones y actividades de aprendizaje.";
-
-    display: block;
-
-    margin-top: 9px;
-
-    color: var(--uv-muted);
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-}
-
-/* H5P */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="3"]
-.tile-text::after {
-
-    content:
-    "Videos interactivos, juegos, presentaciones y contenidos H5P.";
-
-    display: block;
-
-    margin-top: 9px;
-
-    color: var(--uv-muted);
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-}
-
-/* INTELIGENCIA ARTIFICIAL */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li[data-section="4"]
-.tile-text::after {
-
-    content:
-    "Herramientas y recursos de inteligencia artificial.";
-
-    display: block;
-
-    margin-top: 9px;
-
-    color: var(--uv-muted);
-
-    font-size: 13px;
-
-    font-weight: 400;
-
-    line-height: 1.5;
-
-}
-
-
-/* ============================================================
-   15. ESTADOS DE INTERACCION
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-link:hover {
-
-    text-decoration: none !important;
-
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-link:focus-visible {
-
-    outline: 3px solid var(--uv-red) !important;
-
-    outline-offset: 3px !important;
-
-}
-
-
-/* ============================================================
-   16. BIENVENIDA
-   MODULO REAL: #module-322
-   UBICACION: DEBAJO DE LOS MOSAICOS
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#module-322 {
-
-    display: block !important;
-
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    margin: 28px 0 18px !important;
-
-    padding: 0 !important;
-
-    box-sizing: border-box !important;
-
-}
-
-/* Tarjeta exterior */
-
-body#page-course-view-tiles.course-33
-#module-322 .activity-item {
-
-    width: 100% !important;
-
-    max-width: 100% !important;
-
-    margin: 0 !important;
-
-    padding: 14px !important;
-
-    background: var(--uv-white) !important;
-
-    border: 1px solid var(--uv-border) !important;
-
-    border-radius: 14px !important;
-
-    box-shadow:
-        0 3px 12px rgba(20,40,70,.06) !important;
-
-    box-sizing: border-box !important;
-
-}
-
-/* Interior de bienvenida */
-
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome {
-
-    display: flex !important;
-
-    align-items: center !important;
-
-    gap: 20px !important;
-
-    width: 100% !important;
-
-    min-height: 175px !important;
-
-    margin: 0 !important;
-
-    padding: 22px !important;
-
-    box-sizing: border-box !important;
-
-    background: linear-gradient(
-        110deg,
-        #FFF0F1 0%,
-        #FFFFFF 48%,
-        #EDF5FF 100%
-    ) !important;
-
-    border: 1px solid #F0D9DC !important;
-
-    border-left: 5px solid var(--uv-red) !important;
-
-    border-radius: 12px !important;
-
-}
-
-/* Icono de bienvenida */
-
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome-icon {
-
-    display: flex !important;
-
-    flex: 0 0 62px !important;
-
-    align-items: center !important;
-
-    justify-content: center !important;
-
-    width: 62px !important;
-
-    height: 62px !important;
-
-    border: 1px solid var(--uv-red) !important;
-
-    border-radius: 50% !important;
-
-    background: #FFFFFF !important;
-
-}
-
-/* Contenido */
-
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome-content {
-
-    flex: 1 1 auto !important;
-
-    min-width: 0 !important;
-
-}
-
-/* Titulo */
-
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome h2 {
-
-    color: var(--uv-red-dark) !important;
-
-    font-size: 22px !important;
-
-    font-weight: 700 !important;
-
-    line-height: 1.35 !important;
-
-    margin: 0 0 10px !important;
-
-}
-
-/* Parrafos */
-
-body#page-course-view-tiles.course-33
-#module-322 .uv-welcome p {
-
-    color: var(--uv-text) !important;
-
-    font-size: 14px !important;
-
-    line-height: 1.65 !important;
-
-    margin: 7px 0 !important;
-
-}
-
-
-/* ============================================================
-   17. OCULTAR AVISOS
-   MODULO REAL IDENTIFICADO: #module-296
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-#module-296 {
-
-    display: none !important;
-
-}
-
-
-/* ============================================================
-   18. AJUSTES GENERALES DE ACTIVIDADES
-   ============================================================ */
-
-body#page-course-view-tiles.course-33
-.activity-item {
-
-    border-radius: 12px;
-
-}
-
-
-/* ============================================================
-   19. RESPONSIVE - TABLET
-   ============================================================ */
-
-@media (max-width: 768px) {
-
-    body#page-course-view-tiles.course-33
-    .course-content {
-
-        padding: 14px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-
-        gap: 12px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li.tile,
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-link {
-
-        min-height: 140px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-link {
-
-        gap: 12px !important;
-
-        padding: 14px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-top {
-
-        flex-basis: 55px !important;
-
-        width: 55px !important;
-
-        min-width: 55px !important;
-
-        height: 55px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-text {
-
-        font-size: 16px !important;
-
-    }
-
-}
-
-
-/* ============================================================
-   20. RESPONSIVE - MOVIL
-   ============================================================ */
-
-@media (max-width: 480px) {
-
-    body#page-course-view-tiles.course-33
-    .course-content {
-
-        padding: 10px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-
-        grid-template-columns:
-            repeat(2, minmax(0, 1fr)) !important;
-
-        gap: 10px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li.tile,
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-link {
-
-        min-height: 155px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-link {
-
-        flex-direction: column !important;
-
-        align-items: flex-start !important;
-
-        justify-content: center !important;
-
-        gap: 10px !important;
-
-        padding: 12px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-top {
-
-        flex-basis: 46px !important;
-
-        width: 46px !important;
-
-        min-width: 46px !important;
-
-        height: 46px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-top::before {
-
-        background-size: 27px 27px;
-
-        font-size: 16px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-text {
-
-        font-size: 15px !important;
-
-        line-height: 1.25 !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-text::after {
-
-        font-size: 11px !important;
-
-        line-height: 1.4 !important;
-
-        margin-top: 5px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #module-322 .uv-welcome {
-
-        flex-direction: column !important;
-
-        align-items: flex-start !important;
-
-        padding: 16px !important;
-
-    }
-
-    body#page-course-view-tiles.course-33
-    #module-322 .uv-welcome h2 {
-
-        font-size: 18px !important;
-
-    }
-
-}
-
-
-/* ============================================================
-   21. ACCESIBILIDAD
-   ============================================================ */
-
-@media (prefers-reduced-motion: reduce) {
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li.tile {
-
-        transition: none !important;
-
-    }
-
-}
-
-
-
-
-/* ============================================================
-   22. CORRECCION ESTRUCTURAL DEL MOSAICO
-   IMPORTANTE:
-   #multi_section_tiles contiene tanto los mosaicos (.tile)
-   como los paneles de sección (.section).
-   Los paneles no deben ocupar las celdas de la cuadrícula.
-   ============================================================ */
-
-/* Ordenar primero los cuatro mosaicos */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile {
-    order: 1 !important;
-    grid-column: auto !important;
-    min-width: 0 !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 155px !important;
-    box-sizing: border-box !important;
-}
-
-/* Los paneles de contenido van después de todos los mosaicos.
-   Se conserva el display que controla Moodle (por ejemplo none). */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.section {
-    order: 2 !important;
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 0 0 20px !important;
-    box-sizing: border-box !important;
-}
-
-/* Estructura real: enlace > tile-content > icono + texto */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-link {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    min-height: 155px !important;
-    height: 100% !important;
-    gap: 18px !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-content {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    height: auto !important;
-    gap: 18px !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-top {
-    position: relative !important;
-    inset: auto !important;
-    flex: 0 0 76px !important;
-    width: 76px !important;
-    min-width: 76px !important;
-    height: 76px !important;
-    margin: 0 !important;
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-text {
-    display: block !important;
-    position: relative !important;
-    inset: auto !important;
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    width: auto !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-    overflow-wrap: anywhere !important;
-    text-align: left !important;
-    line-height: 1.35 !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-textinner {
-    position: static !important;
-    display: block !important;
-    width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    transform: none !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    line-height: 1.4 !important;
-}
-
-/* En móviles, mantener dos columnas mientras haya espacio.
-   En pantallas muy estrechas, pasar a una columna. */
-@media (max-width: 600px) {
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-link {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        justify-content: flex-start !important;
-        min-height: 165px !important;
-        gap: 10px !important;
-        padding: 14px !important;
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-content {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 10px !important;
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles .tile-top {
-        flex-basis: 52px !important;
-        width: 52px !important;
-        min-width: 52px !important;
-        height: 52px !important;
-    }
-}
-
-@media (max-width: 360px) {
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-/* ============================================================
-   FIN DEL CSS
-   UNIVERSIDAD DEL VALLE - CURSO 33
-   ============================================================ */
-
-/* ============================================================
-   UNIVALLE - CURSO 33: AJUSTE DE ANCHO Y DISTRIBUCION
-   Prevalece sobre las reglas anteriores del curso 33.
-   ============================================================ */
-
-body#page-course-view-tiles.course-33 {
     overflow-x: hidden !important;
 }
 
-/* Ampliar el contenedor central del curso */
-body#page-course-view-tiles.course-33 #page.drawers .main-inner,
-body#page-course-view-tiles.course-33 #page-content,
-body#page-course-view-tiles.course-33 #topofscroll,
-body#page-course-view-tiles.course-33 .main-inner,
-body#page-course-view-tiles.course-33 .main-inner > .container,
-body#page-course-view-tiles.course-33 .main-inner .container,
-body#page-course-view-tiles.course-33 .course-content {
+
+/* ============================================================
+   02. CONTENEDOR PRINCIPAL
+   ============================================================ */
+
+body#page-course-view-topics.course-33 #page-content,
+body#page-course-view-topics.course-33 #topofscroll {
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+body#page-course-view-topics.course-33 .main-inner {
+    width: 100% !important;
+    max-width: 1440px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-topics.course-33 .course-content {
     width: 100% !important;
     max-width: 1320px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 18px 24px 40px !important;
     box-sizing: border-box !important;
 }
 
-body#page-course-view-tiles.course-33 .main-inner > .container,
-body#page-course-view-tiles.course-33 .main-inner .container {
-    margin-left: auto !important;
-    margin-right: auto !important;
+
+/* ============================================================
+   03. BANNER INSTITUCIONAL
+   Se conserva la imagen y el contenido original de Moodle.
+   ============================================================ */
+
+body#page-course-view-topics.course-33 #page-header {
+    width: calc(100% - 40px) !important;
+    max-width: 1320px !important;
+    margin: 0 auto 22px !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    box-sizing: border-box !important;
 }
 
-body#page-course-view-tiles.course-33 .course-content {
-    padding: 18px clamp(12px, 2.5vw, 32px) 35px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-}
-
-/* Dos columnas para los cuatro mosaicos */
-body#page-course-view-tiles.course-33 #multi_section_tiles {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    align-items: stretch !important;
-    justify-items: stretch !important;
-    gap: 16px !important;
+body#page-course-view-topics.course-33 #page-header .header-maxwidth {
     width: 100% !important;
     max-width: 100% !important;
-    margin: 18px 0 24px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+
+/* ============================================================
+   04. NAVEGACION DEL CURSO
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .secondary-navigation {
+    background: var(--uv-white) !important;
+    border: 1px solid var(--uv-border) !important;
+    border-radius: 10px !important;
+    margin-bottom: 24px !important;
+    box-shadow: 0 2px 8px rgba(25,40,65,.04);
+}
+
+body#page-course-view-topics.course-33 .secondary-navigation .nav-link {
+    color: var(--uv-text) !important;
+    font-weight: 500 !important;
+    transition: color .2s ease;
+}
+
+body#page-course-view-topics.course-33 .secondary-navigation .nav-link:hover {
+    color: var(--uv-red) !important;
+}
+
+body#page-course-view-topics.course-33 .secondary-navigation .nav-link.active {
+    color: var(--uv-red) !important;
+    border-bottom: 3px solid var(--uv-red) !important;
+    font-weight: 700 !important;
+}
+
+
+/* ============================================================
+   05. SECCIONES DEL FORMATO TEMAS
+   Cada tema se presenta como un contenedor independiente.
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .course-section {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 0 22px !important;
+    padding: 22px !important;
+    background: var(--uv-white) !important;
+    border: 1px solid var(--uv-border) !important;
+    border-radius: var(--uv-radius) !important;
+    box-shadow: 0 3px 12px rgba(20,40,70,.045) !important;
+    box-sizing: border-box !important;
+}
+
+body#page-course-view-topics.course-33 .course-section:hover {
+    border-color: #D5DFEC !important;
+}
+
+
+/* ============================================================
+   06. TITULOS DE LAS SECCIONES
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .course-section .sectionname,
+body#page-course-view-topics.course-33 .course-section .sectionname a {
+    color: var(--uv-dark) !important;
+    font-size: 21px !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    text-decoration: none !important;
+}
+
+body#page-course-view-topics.course-33 .course-section .sectionname a:hover {
+    color: var(--uv-red) !important;
+}
+
+
+/* ============================================================
+   07. DESCRIPCIONES DE LAS SECCIONES
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .course-section .summary,
+body#page-course-view-topics.course-33 .course-section .section-summary,
+body#page-course-view-topics.course-33 .course-section .content {
+    color: var(--uv-text);
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+body#page-course-view-topics.course-33 .course-section .summary img,
+body#page-course-view-topics.course-33 .course-section .content img {
+    max-width: 100% !important;
+    height: auto !important;
+}
+
+
+/* ============================================================
+   08. ACTIVIDADES Y RECURSOS
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .activity-item {
+    background: #FFFFFF !important;
+    border: 1px solid #E9EDF3 !important;
+    border-radius: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+body#page-course-view-topics.course-33 .activity-item:hover {
+    border-color: #CBD9EA !important;
+    box-shadow: 0 3px 10px rgba(20,40,70,.055) !important;
+}
+
+body#page-course-view-topics.course-33 .activity-item .activityname a {
+    color: var(--uv-dark) !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+}
+
+body#page-course-view-topics.course-33 .activity-item .activityname a:hover {
+    color: var(--uv-red) !important;
+}
+
+body#page-course-view-topics.course-33 .activity-item .activityicon {
+    max-width: 28px;
+    max-height: 28px;
+}
+
+
+/* ============================================================
+   09. BIENVENIDA PERSONALIZADA
+   MODULO ORIGINAL: #module-322
+   ============================================================ */
+
+body#page-course-view-topics.course-33 #module-322 {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 24px 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
 }
 
-/* Solo las tarjetas son celdas de mosaico */
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile {
-    grid-column: auto !important;
+body#page-course-view-topics.course-33 #module-322 .activity-item {
     width: 100% !important;
-    min-width: 0 !important;
-    min-height: 142px !important;
-    height: auto !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    width: 100% !important;
-    min-height: 142px !important;
-    height: 100% !important;
-    gap: clamp(10px, 1.5vw, 20px) !important;
-    padding: clamp(12px, 1.8vw, 22px) !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-top {
-    flex: 0 0 64px !important;
-    width: 64px !important;
-    min-width: 64px !important;
-    height: 64px !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-text {
-    flex: 1 1 0 !important;
-    min-width: 0 !important;
-    overflow-wrap: anywhere !important;
-    font-size: clamp(15px, 1.4vw, 19px) !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-text::after {
-    font-size: clamp(11px, 1vw, 13px) !important;
-}
-
-/* Cada panel de sección reserva el ancho completo debajo de los mosaicos.
-   No se fuerza su visibilidad: Moodle/Tiles controla qué sección se abre. */
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section {
-    grid-column: 1 / -1 !important;
-    order: 2 !important;
-    width: 100% !important;
-    min-width: 0 !important;
     max-width: 100% !important;
     margin: 0 !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .content,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .section-content,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity-item {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Mantener bienvenida general debajo del área de mosaicos */
-body#page-course-view-tiles.course-33 #module-322 {
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-/* Tabletas */
-@media (max-width: 768px) {
-    body#page-course-view-tiles.course-33 #multi_section_tiles {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        gap: 12px !important;
-    }
-
-    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile,
-    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
-        min-height: 132px !important;
-    }
-
-    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-link {
-        gap: 10px !important;
-        padding: 12px !important;
-    }
-
-    body#page-course-view-tiles.course-33 #multi_section_tiles > li.tile .tile-top {
-        flex-basis: 48px !important;
-        width: 48px !important;
-        min-width: 48px !important;
-        height: 48px !important;
-    }
-}
-
-/* Teléfonos muy estrechos */
-@media (max-width: 380px) {
-    body#page-course-view-tiles.course-33 #multi_section_tiles {
-        grid-template-columns: 1fr !important;
-    }
-}
-
-/* FIN DEL AJUSTE DE ANCHO Y DISTRIBUCION */
-
-
-/* ==========================================================
-   UNIVERSIDAD DEL VALLE - CURSO 33
-   ORGANIZACION DE MOSAICOS Y SECCIONES
-   ========================================================== */
-
-/* Contenedor principal */
-body#page-course-view-tiles.course-33 #multi_section_tiles {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    grid-auto-flow: row !important;
-    gap: 18px 24px !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
     padding: 0 !important;
-    box-sizing: border-box !important;
-    list-style: none !important;
-    align-items: stretch !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-/* Los cuatro mosaicos siempre antes de las secciones */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile:not(.spacer) {
-    order: 1 !important;
-    grid-column: auto !important;
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    min-height: 140px !important;
-    height: auto !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
+/* Banner de bienvenida con imagen */
 
-/* Ocultar los elementos vacíos que Moodle intercala */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile.spacer {
-    display: none !important;
-}
-
-/* Enlaces de los mosaicos */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.tile:not(.spacer) > a.tile-link {
-    display: flex !important;
-    align-items: center !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    min-height: 140px !important;
-    height: 100% !important;
-    padding: 20px !important;
-    box-sizing: border-box !important;
-    white-space: normal !important;
-}
-
-/* Distribución interna */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-content {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    gap: 16px !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    box-sizing: border-box !important;
-}
-
-/* Iconos */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-top {
-    flex: 0 0 auto !important;
-}
-
-/* Texto */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-text {
-    flex: 1 1 auto !important;
-    min-width: 0 !important;
-    width: auto !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-}
-
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-textinner {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-    white-space: normal !important;
-    overflow-wrap: break-word !important;
-}
-
-/* Títulos de los mosaicos */
-body#page-course-view-tiles.course-33
-#multi_section_tiles .tile-textinner h3 {
-    display: block !important;
-    width: 100% !important;
-    margin: 0 !important;
-    font-size: 23px !important;
-    line-height: 1.3 !important;
-    white-space: normal !important;
-    overflow: visible !important;
-    overflow-wrap: break-word !important;
-}
-
-/* Las secciones van después de los cuatro mosaicos */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.section.course-section {
-    order: 2 !important;
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-    position: relative !important;
-    inset: auto !important;
-    transform: none !important;
-}
-
-/* El contenido de la sección utiliza todo el ancho */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.section.course-section
-.format-tiles-cm-list {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* No recortar el contenido de las actividades */
-body#page-course-view-tiles.course-33
-#multi_section_tiles > li.section.course-section .activity-wrapper {
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Adaptación para celulares */
-@media (max-width: 600px) {
-    body#page-course-view-tiles.course-33 #multi_section_tiles {
-        grid-template-columns: minmax(0, 1fr) !important;
-        gap: 12px !important;
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li.tile:not(.spacer) {
-        min-height: 110px !important;
-    }
-
-    body#page-course-view-tiles.course-33
-    #multi_section_tiles > li.tile:not(.spacer) > a.tile-link {
-        min-height: 110px !important;
-        padding: 15px !important;
-    }
-}
-
-/* ==========================================
-   BIENVENIDA UNIVALLE - CURSO 33
-   Imagen de fondo con texto superpuesto
-   ========================================== */
-
-body#page-course-view-tiles.course-33 .uv-welcome {
+body#page-course-view-topics.course-33 .uv-welcome {
     position: relative !important;
     display: flex !important;
     align-items: center !important;
@@ -2002,163 +798,148 @@ body#page-course-view-tiles.course-33 .uv-welcome {
     border-radius: 16px !important;
 
     background:
-      linear-gradient(
-        90deg,
-        rgba(17, 36, 75, 0.72),
-        rgba(17, 36, 75, 0.18)
-      ),
-      url("https://educontinuavirtual.cloudunivalle.edu.co/draftfile.php/181/user/draft/908293939/Banner%20abstracto%20con%20curvas%20y%20degradados%20relucientes.png")
-      center center / cover no-repeat !important;
+        linear-gradient(
+            90deg,
+            rgba(17,36,75,.72),
+            rgba(17,36,75,.18)
+        ),
+        url("https://educontinuavirtual.cloudunivalle.edu.co/draftfile.php/181/user/draft/908293939/Banner%20abstracto%20con%20curvas%20y%20degradados%20relucientes.png")
+        center center / cover no-repeat !important;
 }
 
-/* Contenido siempre por encima del fondo */
-body#page-course-view-tiles.course-33 .uv-welcome-content {
+body#page-course-view-topics.course-33 .uv-welcome-content {
     position: relative !important;
     z-index: 2 !important;
     width: 100% !important;
     max-width: 850px !important;
 }
 
-/* Título */
-body#page-course-view-tiles.course-33 .uv-welcome-content h2 {
-    color: #ffffff !important;
+body#page-course-view-topics.course-33 .uv-welcome-content h2 {
+    color: #FFFFFF !important;
     font-size: 30px !important;
     font-weight: 700 !important;
     line-height: 1.3 !important;
-    margin: 0 0 20px 0 !important;
+    margin: 0 0 20px !important;
 }
 
-/* Párrafos */
-body#page-course-view-tiles.course-33 .uv-welcome-content p {
-    color: #ffffff !important;
+body#page-course-view-topics.course-33 .uv-welcome-content p {
+    color: #FFFFFF !important;
     font-size: 17px !important;
     line-height: 1.6 !important;
-    margin: 0 0 12px 0 !important;
+    margin: 0 0 12px !important;
 }
 
-/* Móviles */
-@media (max-width: 600px) {
-    body#page-course-view-tiles.course-33 .uv-welcome {
-        min-height: 320px !important;
-        padding: 28px 22px !important;
+
+/* ============================================================
+   10. OCULTAR AVISOS
+   Se conserva la personalizacion original del modulo 296.
+   ============================================================ */
+
+body#page-course-view-topics.course-33 #module-296 {
+    display: none !important;
+}
+
+
+/* ============================================================
+   11. BOTONES Y ENLACES
+   ============================================================ */
+
+body#page-course-view-topics.course-33 .btn-primary {
+    background-color: var(--uv-red) !important;
+    border-color: var(--uv-red) !important;
+}
+
+body#page-course-view-topics.course-33 .btn-primary:hover {
+    background-color: var(--uv-red-dark) !important;
+    border-color: var(--uv-red-dark) !important;
+}
+
+
+/* ============================================================
+   12. RESPONSIVE - TABLETAS
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    body#page-course-view-topics.course-33 .course-content {
+        padding: 14px !important;
+    }
+
+    body#page-course-view-topics.course-33 .course-section {
+        padding: 17px !important;
+        margin-bottom: 16px !important;
+    }
+
+    body#page-course-view-topics.course-33 #page-header {
+        width: calc(100% - 20px) !important;
+    }
+
+    body#page-course-view-topics.course-33 .uv-welcome {
+        min-height: 280px !important;
+        padding: 30px !important;
+    }
+
+    body#page-course-view-topics.course-33 .uv-welcome-content h2 {
+        font-size: 25px !important;
+    }
+}
+
+
+/* ============================================================
+   13. RESPONSIVE - MOVILES
+   ============================================================ */
+
+@media (max-width: 480px) {
+
+    body#page-course-view-topics.course-33 .course-content {
+        padding: 10px !important;
+    }
+
+    body#page-course-view-topics.course-33 .course-section {
+        padding: 14px !important;
+        border-radius: 11px !important;
+    }
+
+    body#page-course-view-topics.course-33 .course-section .sectionname,
+    body#page-course-view-topics.course-33 .course-section .sectionname a {
+        font-size: 18px !important;
+    }
+
+    body#page-course-view-topics.course-33 .activity-item {
+        padding: 10px !important;
+    }
+
+    body#page-course-view-topics.course-33 .uv-welcome {
+        min-height: 300px !important;
+        padding: 25px 20px !important;
         background-position: center center !important;
     }
 
-    body#page-course-view-tiles.course-33 .uv-welcome-content h2 {
-        font-size: 23px !important;
+    body#page-course-view-topics.course-33 .uv-welcome-content h2 {
+        font-size: 22px !important;
     }
 
-    body#page-course-view-tiles.course-33 .uv-welcome-content p {
+    body#page-course-view-topics.course-33 .uv-welcome-content p {
         font-size: 15px !important;
     }
 }
 
+
 /* ============================================================
-   AJUSTES FINALES CONSOLIDADOS - SOLO CURSO 33
-   Corrige el ancho de bienvenida y elimina reglas contradictorias.
+   14. ACCESIBILIDAD
    ============================================================ */
 
-/* Banner superior: conservar imagen, centrar y aclarar */
-body#page-course-view-tiles.course-33 #page-header {
-    width: calc(100% - 40px) !important;
-    max-width: 1320px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    box-shadow: none !important;
-}
-
-body#page-course-view-tiles.course-33 #page-header .header-maxwidth,
-body#page-course-view-tiles.course-33 #page-header.header-maxwidth {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
-
-/* Quitar el oscurecimiento superpuesto sin borrar la imagen */
-body#page-course-view-tiles.course-33 #page-header .position-absolute.w-100.h-100 {
-    background: transparent !important;
-    background-image: none !important;
-}
-
-/* Ocultar textos y datos del banner */
-body#page-course-view-tiles.course-33 #page-header .page-header-headings,
-body#page-course-view-tiles.course-33 #page-header .category,
-body#page-course-view-tiles.course-33 #page-header .instructor-info,
-body#page-course-view-tiles.course-33 #page-header .instructor-info-stat-container,
-body#page-course-view-tiles.course-33 #page-header .header-sub-section {
-    display: none !important;
-}
-
-/* Ocultar los controles de opciones que aparecen sobre los mosaicos */
-body#page-course-view-tiles.course-33 .above-tiles-buttons {
-    display: none !important;
-}
-
-/* Dar todo el ancho disponible a la sección que contiene la bienvenida */
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section.course-section {
-    grid-column: 1 / -1 !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .format-tiles-cm-list,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .activity-wrapper,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .content,
-body#page-course-view-tiles.course-33 #multi_section_tiles > li.section .section-content {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    box-sizing: border-box !important;
-}
-
-/* Centrar y expandir el módulo de bienvenida */
-body#page-course-view-tiles.course-33 #module-322 {
-    display: block !important;
-    float: none !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 28px auto 18px !important;
-    padding: 0 !important;
-    justify-self: stretch !important;
-    box-sizing: border-box !important;
-}
-
-body#page-course-view-tiles.course-33 #module-322 .activity-item {
-    display: block !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
-
-/* Mantener el fondo claro y quitar la franja roja izquierda */
-body#page-course-view-tiles.course-33 #module-322 .uv-welcome {
-    display: flex !important;
-    width: 100% !important;
-    min-width: 0 !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    border-left: none !important;
-    box-sizing: border-box !important;
-}
-
-@media (max-width: 768px) {
-    body#page-course-view-tiles.course-33 #page-header {
-        width: calc(100% - 20px) !important;
+@media (prefers-reduced-motion: reduce) {
+    body#page-course-view-topics.course-33 *,
+    body#page-course-view-topics.course-33 *::before,
+    body#page-course-view-topics.course-33 *::after {
+        transition: none !important;
+        animation: none !important;
     }
 }
+
+/* ============================================================
+   FIN DEL CSS
+   UNIVERSIDAD DEL VALLE - CURSO 33
+   FORMATO TEMAS
+   ============================================================ */
