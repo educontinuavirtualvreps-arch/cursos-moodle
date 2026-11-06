@@ -544,8 +544,8 @@ body.editing #wdm_course-stats {
    UNIVERSIDAD DEL VALLE
    CURSO 33 - EDUCACION CONTINUA
    MOODLE 4.5 / 5.X
-   FORMATO: TEMAS (format-topics)
-   IDENTIDAD VISUAL INSTITUCIONAL
+   FORMATO: SELECCIONES PERSONALIZADAS
+   DISEÑO INSTITUCIONAL UNIVALLE
    ============================================================ */
 
 
@@ -553,7 +553,7 @@ body.editing #wdm_course-stats {
    01. VARIABLES INSTITUCIONALES
    ============================================================ */
 
-body#page-course-view-topics.course-33 {
+body.course-33 {
 
     --uv-red: #C8101E;
     --uv-red-dark: #A50E19;
@@ -579,8 +579,11 @@ body#page-course-view-topics.course-33 {
     --uv-radius: 14px;
 
     background-color: var(--uv-page) !important;
+
     color: var(--uv-dark);
+
     overflow-x: hidden !important;
+
 }
 
 
@@ -588,358 +591,1000 @@ body#page-course-view-topics.course-33 {
    02. CONTENEDOR PRINCIPAL
    ============================================================ */
 
-body#page-course-view-topics.course-33 #page-content,
-body#page-course-view-topics.course-33 #topofscroll {
-    box-sizing: border-box !important;
-    width: 100% !important;
-}
+body.course-33 #page-content,
+body.course-33 #topofscroll,
+body.course-33 .main-inner,
+body.course-33 .course-content {
 
-body#page-course-view-topics.course-33 .main-inner {
     width: 100% !important;
-    max-width: 1440px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    box-sizing: border-box !important;
-}
 
-body#page-course-view-topics.course-33 .course-content {
-    width: 100% !important;
     max-width: 1320px !important;
+
     margin-left: auto !important;
+
     margin-right: auto !important;
-    padding: 18px 24px 40px !important;
+
     box-sizing: border-box !important;
+
+}
+
+body.course-33 .course-content {
+
+    padding: 18px clamp(12px, 2.5vw, 32px) 35px !important;
+
 }
 
 
 /* ============================================================
-   03. BANNER INSTITUCIONAL
-   Se conserva la imagen y el contenido original de Moodle.
+   03. BANNER SUPERIOR UNIVALLE
+   CONSERVAR IMAGEN ORIGINAL
+   OCULTAR NOMBRE DEL CURSO Y DOCENTE
+   ELIMINAR OSCURECIMIENTO
    ============================================================ */
 
-body#page-course-view-topics.course-33 #page-header {
+/* Contenedor principal */
+
+body.course-33 #page-header {
+
+    position: relative !important;
+
     width: calc(100% - 40px) !important;
+
     max-width: 1320px !important;
-    margin: 0 auto 22px !important;
+
+    margin: 0 auto 18px !important;
+
     border-radius: 12px !important;
+
     overflow: hidden !important;
-    box-sizing: border-box !important;
+
+    background-size: cover !important;
+
+    background-position: center center !important;
+
+    background-repeat: no-repeat !important;
+
 }
 
-body#page-course-view-topics.course-33 #page-header .header-maxwidth {
+/* Conservar la imagen del banner */
+
+body.course-33 #page-header .header-maxwidth,
+body.course-33 #page-header.header-maxwidth {
+
     width: 100% !important;
+
     max-width: 100% !important;
+
     margin-left: auto !important;
+
     margin-right: auto !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
+
+    background-color: transparent !important;
+
+}
+
+/* Eliminar capa oscura */
+
+body.course-33 #page-header .position-absolute.w-100.h-100 {
+
+    background: none !important;
+
+    background-image: none !important;
+
+    opacity: 0 !important;
+
+    visibility: hidden !important;
+
+}
+
+/* Eliminar nombre del curso */
+
+body.course-33 #page-header .page-header-headings,
+body.course-33 #page-header .page-context-header,
+body.course-33 #page-header h1 {
+
+    display: none !important;
+
+}
+
+/* Eliminar categoría */
+
+body.course-33 #page-header .category {
+
+    display: none !important;
+
+}
+
+/* Eliminar información del docente */
+
+body.course-33 #page-header .instructor-info,
+body.course-33 #page-header .instructor-info-stat-container,
+body.course-33 #page-header .header-sub-section,
+body.course-33 #page-header .instructors {
+
+    display: none !important;
+
+}
+
+/* Eliminar posibles capas de oscurecimiento */
+
+body.course-33 #page-header .header-wrapper::before,
+body.course-33 #page-header .header-wrapper::after {
+
+    background: none !important;
+
+    opacity: 0 !important;
+
 }
 
 
 /* ============================================================
-   04. NAVEGACION DEL CURSO
+   04. MENU DE NAVEGACION DEL CURSO
    ============================================================ */
 
-body#page-course-view-topics.course-33 .secondary-navigation {
+body.course-33 .secondary-navigation {
+
     background: var(--uv-white) !important;
+
     border: 1px solid var(--uv-border) !important;
+
     border-radius: 10px !important;
-    margin-bottom: 24px !important;
-    box-shadow: 0 2px 8px rgba(25,40,65,.04);
+
+    margin-bottom: 25px !important;
+
+    box-shadow: 0 2px 8px rgba(25,40,65,.04) !important;
+
 }
 
-body#page-course-view-topics.course-33 .secondary-navigation .nav-link {
+/* Enlaces */
+
+body.course-33 .secondary-navigation .nav-link {
+
     color: var(--uv-text) !important;
+
     font-weight: 500 !important;
+
     transition: color .2s ease;
+
 }
 
-body#page-course-view-topics.course-33 .secondary-navigation .nav-link:hover {
+/* Hover */
+
+body.course-33 .secondary-navigation .nav-link:hover {
+
     color: var(--uv-red) !important;
+
 }
 
-body#page-course-view-topics.course-33 .secondary-navigation .nav-link.active {
+/* Pestaña activa */
+
+body.course-33 .secondary-navigation .nav-link.active {
+
     color: var(--uv-red) !important;
+
     border-bottom: 3px solid var(--uv-red) !important;
+
     font-weight: 700 !important;
+
 }
 
 
 /* ============================================================
-   05. SECCIONES DEL FORMATO TEMAS
-   Cada tema se presenta como un contenedor independiente.
+   05. ESTRUCTURA GENERAL DE SECCIONES
+   SELECTOR REAL: .section-item
    ============================================================ */
 
-body#page-course-view-topics.course-33 .course-section {
-    position: relative !important;
+/* Contenedor de secciones */
+
+body.course-33 ul.topics,
+body.course-33 ul.course-sections {
+
     width: 100% !important;
+
     max-width: 100% !important;
-    margin: 0 0 22px !important;
-    padding: 22px !important;
-    background: var(--uv-white) !important;
-    border: 1px solid var(--uv-border) !important;
-    border-radius: var(--uv-radius) !important;
-    box-shadow: 0 3px 12px rgba(20,40,70,.045) !important;
+
+    margin: 20px auto !important;
+
+    padding: 0 !important;
+
+    list-style: none !important;
+
     box-sizing: border-box !important;
+
 }
 
-body#page-course-view-topics.course-33 .course-section:hover {
-    border-color: #D5DFEC !important;
-}
+/* Cada tarjeta */
 
+body.course-33 li.section .section-item {
 
-/* ============================================================
-   06. TITULOS DE LAS SECCIONES
-   ============================================================ */
-
-body#page-course-view-topics.course-33 .course-section .sectionname,
-body#page-course-view-topics.course-33 .course-section .sectionname a {
-    color: var(--uv-dark) !important;
-    font-size: 21px !important;
-    font-weight: 700 !important;
-    line-height: 1.4 !important;
-    text-decoration: none !important;
-}
-
-body#page-course-view-topics.course-33 .course-section .sectionname a:hover {
-    color: var(--uv-red) !important;
-}
-
-
-/* ============================================================
-   07. DESCRIPCIONES DE LAS SECCIONES
-   ============================================================ */
-
-body#page-course-view-topics.course-33 .course-section .summary,
-body#page-course-view-topics.course-33 .course-section .section-summary,
-body#page-course-view-topics.course-33 .course-section .content {
-    color: var(--uv-text);
-    font-size: 14px;
-    line-height: 1.65;
-}
-
-body#page-course-view-topics.course-33 .course-section .summary img,
-body#page-course-view-topics.course-33 .course-section .content img {
-    max-width: 100% !important;
-    height: auto !important;
-}
-
-
-/* ============================================================
-   08. ACTIVIDADES Y RECURSOS
-   ============================================================ */
-
-body#page-course-view-topics.course-33 .activity-item {
-    background: #FFFFFF !important;
-    border: 1px solid #E9EDF3 !important;
-    border-radius: 10px !important;
-    margin-bottom: 10px !important;
-    padding: 12px !important;
-    box-sizing: border-box !important;
-    transition: border-color .2s ease, box-shadow .2s ease;
-}
-
-body#page-course-view-topics.course-33 .activity-item:hover {
-    border-color: #CBD9EA !important;
-    box-shadow: 0 3px 10px rgba(20,40,70,.055) !important;
-}
-
-body#page-course-view-topics.course-33 .activity-item .activityname a {
-    color: var(--uv-dark) !important;
-    font-weight: 600 !important;
-    text-decoration: none !important;
-}
-
-body#page-course-view-topics.course-33 .activity-item .activityname a:hover {
-    color: var(--uv-red) !important;
-}
-
-body#page-course-view-topics.course-33 .activity-item .activityicon {
-    max-width: 28px;
-    max-height: 28px;
-}
-
-
-/* ============================================================
-   09. BIENVENIDA PERSONALIZADA
-   MODULO ORIGINAL: #module-322
-   ============================================================ */
-
-body#page-course-view-topics.course-33 #module-322 {
     display: block !important;
+
     width: 100% !important;
+
     max-width: 100% !important;
-    margin: 24px 0 !important;
+
+    min-width: 0 !important;
+
+    margin: 0 0 16px !important;
+
     padding: 0 !important;
-    box-sizing: border-box !important;
-}
 
-body#page-course-view-topics.course-33 #module-322 .activity-item {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
+    background: var(--uv-white) !important;
 
-/* Banner de bienvenida con imagen */
+    border: 1px solid var(--uv-border) !important;
 
-body#page-course-view-topics.course-33 .uv-welcome {
-    position: relative !important;
-    display: flex !important;
-    align-items: center !important;
-    width: 100% !important;
-    min-height: 300px !important;
-    padding: 45px 55px !important;
-    box-sizing: border-box !important;
+    border-radius: var(--uv-radius) !important;
+
+    box-shadow: 0 3px 12px rgba(20,40,70,.055) !important;
+
     overflow: hidden !important;
-    border-radius: 16px !important;
+
+    box-sizing: border-box !important;
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
+
+}
+
+/* Interacción */
+
+body.course-33 li.section .section-item:hover {
+
+    box-shadow: 0 7px 18px rgba(20,40,70,.09) !important;
+
+}
+
+
+/* ============================================================
+   06. CABECERAS DE SECCIONES
+   ESTRUCTURA REAL CONFIRMADA
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-for="section_title"] {
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    width: 100% !important;
+
+    min-height: 76px !important;
+
+    margin: 0 !important;
+
+    padding: 14px 20px !important;
+
+    box-sizing: border-box !important;
+
+    border-bottom: 1px solid var(--uv-border) !important;
+
+}
+
+/* Títulos */
+
+body.course-33
+.course-section-header .sectionname {
+
+    flex: 1 1 auto !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    font-size: 20px !important;
+
+    font-weight: 700 !important;
+
+    line-height: 1.35 !important;
+
+}
+
+/* Enlaces de los títulos */
+
+body.course-33
+.course-section-header .sectionname a {
+
+    color: var(--uv-dark) !important;
+
+    text-decoration: none !important;
+
+}
+
+/* Eliminar subrayado */
+
+body.course-33
+.course-section-header .sectionname a:hover {
+
+    text-decoration: none !important;
+
+}
+
+/* Icono personalizado */
+
+body.course-33
+.course-section-header[data-for="section_title"]::before {
+
+    content: "";
+
+    display: flex !important;
+
+    flex: 0 0 46px !important;
+
+    width: 46px !important;
+
+    height: 46px !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    border-radius: 50% !important;
+
+    background-position: center !important;
+
+    background-repeat: no-repeat !important;
+
+    background-size: 25px 25px !important;
+
+}
+
+
+/* ============================================================
+   07. GENERAL
+   SECCION 0
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-number="0"] {
+
+    background: #F8F9FB !important;
+
+    border-left: 4px solid #AAB3C1 !important;
+
+}
+
+/* Icono general */
+
+body.course-33
+.course-section-header[data-number="0"]::before {
+
+    background-color: #758195 !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3l2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5z'/%3E%3C/svg%3E");
+
+}
+
+
+/* ============================================================
+   08. RECURSOS
+   SECCION 1 - AZUL
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-number="1"] {
+
+    background: var(--uv-blue-light) !important;
+
+    border-left: 4px solid var(--uv-blue) !important;
+
+}
+
+body.course-33
+.course-section-header[data-number="1"]::before {
+
+    background-color: var(--uv-blue) !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 7a2 2 0 0 1 2-2h5l2 2h7a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z'/%3E%3Cpath d='M3 10h18'/%3E%3C/svg%3E");
+
+}
+
+
+/* ============================================================
+   09. ACTIVIDADES
+   SECCION 2 - VERDE
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-number="2"] {
+
+    background: var(--uv-green-light) !important;
+
+    border-left: 4px solid var(--uv-green) !important;
+
+}
+
+body.course-33
+.course-section-header[data-number="2"]::before {
+
+    background-color: var(--uv-green) !important;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M3 3v18h18'/%3E%3Cpath d='M8 16v-4'/%3E%3Cpath d='M13 16V7'/%3E%3Cpath d='M18 16V4'/%3E%3C/svg%3E");
+
+}
+
+
+/* ============================================================
+   10. H5P
+   SECCION 3 - MORADO
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-number="3"] {
+
+    background: var(--uv-purple-light) !important;
+
+    border-left: 4px solid var(--uv-purple) !important;
+
+}
+
+body.course-33
+.course-section-header[data-number="3"]::before {
+
+    content: "H5P";
+
+    color: #FFFFFF !important;
+
+    background-color: var(--uv-purple) !important;
+
+    background-image: none !important;
+
+    font-size: 13px !important;
+
+    font-weight: 800 !important;
+
+}
+
+
+/* ============================================================
+   11. INTELIGENCIA ARTIFICIAL
+   SECCION 4 - ROJO UNIVALLE
+   ============================================================ */
+
+body.course-33
+.course-section-header[data-number="4"] {
+
+    background: var(--uv-red-light) !important;
+
+    border-left: 4px solid var(--uv-red) !important;
+
+}
+
+body.course-33
+.course-section-header[data-number="4"]::before {
+
+    content: "IA";
+
+    color: #FFFFFF !important;
+
+    background-color: var(--uv-red) !important;
+
+    background-image: none !important;
+
+    font-size: 19px !important;
+
+    font-weight: 800 !important;
+
+}
+
+
+/* ============================================================
+   12. FLECHAS DE NAVEGACION
+   CONSERVAR FUNCIONALIDAD ORIGINAL
+   ============================================================ */
+
+body.course-33
+.course-section-header .section_goto {
+
+    margin-left: auto !important;
+
+    flex: 0 0 auto !important;
+
+}
+
+body.course-33
+.course-section-header .section_goto .btn {
+
+    color: var(--uv-red) !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+}
+
+body.course-33
+.course-section-header .section_goto i {
+
+    color: var(--uv-red) !important;
+
+    font-size: 19px !important;
+
+    transition: transform .2s ease;
+
+}
+
+/* Efecto de flecha */
+
+body.course-33
+.course-section-header .section_goto a:hover i {
+
+    transform: translateX(4px);
+
+}
+
+
+/* ============================================================
+   13. CONTENIDO INTERNO DE LAS SECCIONES
+   ============================================================ */
+
+body.course-33
+.course-section-header + .content {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    padding: 16px 20px !important;
+
+    background: #FFFFFF !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* Resumen de actividades */
+
+body.course-33
+.section-summary-activities {
+
+    color: var(--uv-muted) !important;
+
+    font-size: 13px !important;
+
+    padding: 4px 0 !important;
+
+}
+
+/* Iconos de actividades */
+
+body.course-33
+.section-summary-activities i {
+
+    color: var(--uv-red) !important;
+
+    margin-right: 6px !important;
+
+}
+
+/* Actividades individuales */
+
+body.course-33 .activity-item {
+
+    border-radius: 10px !important;
+
+}
+
+
+/* ============================================================
+   14. BIENVENIDA UNIVALLE
+   MODULO REAL: #module-322
+   SECCION GENERAL: #section-0
+   ============================================================ */
+
+/* Contenedor del módulo */
+
+body.course-33 #module-322 {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 18px 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* Tarjeta de actividad */
+
+body.course-33 #module-322 .activity-item {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    background: transparent !important;
+
+    border: none !important;
+
+    box-shadow: none !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* Cuadrícula de la actividad */
+
+body.course-33 #module-322 .activity-grid {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+}
+
+/* Contenido alternativo */
+
+body.course-33 #module-322 .activity-altcontent {
+
+    display: block !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+}
+
+/* Contenedores internos */
+
+body.course-33 #module-322 .no-overflow {
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    overflow: visible !important;
+
+}
+
+
+/* ============================================================
+   15. DISEÑO VISUAL DE BIENVENIDA
+   ============================================================ */
+
+body.course-33 .uv-welcome {
+
+    position: relative !important;
+
+    display: flex !important;
+
+    align-items: center !important;
+
+    justify-content: center !important;
+
+    width: 100% !important;
+
+    min-height: 260px !important;
+
+    margin: 0 !important;
+
+    padding: 42px 50px !important;
+
+    box-sizing: border-box !important;
+
+    overflow: hidden !important;
+
+    border-radius: 14px !important;
 
     background:
         linear-gradient(
-            90deg,
-            rgba(17,36,75,.72),
-            rgba(17,36,75,.18)
+            110deg,
+            rgba(17,36,75,.72) 0%,
+            rgba(17,36,75,.38) 55%,
+            rgba(17,36,75,.18) 100%
         ),
         url("https://educontinuavirtual.cloudunivalle.edu.co/draftfile.php/181/user/draft/908293939/Banner%20abstracto%20con%20curvas%20y%20degradados%20relucientes.png")
         center center / cover no-repeat !important;
+
+    box-shadow: 0 4px 14px rgba(20,40,70,.08) !important;
+
 }
 
-body#page-course-view-topics.course-33 .uv-welcome-content {
+/* Contenido de bienvenida */
+
+body.course-33 .uv-welcome-content {
+
     position: relative !important;
+
     z-index: 2 !important;
+
     width: 100% !important;
-    max-width: 850px !important;
+
+    max-width: 900px !important;
+
+    margin: 0 auto !important;
+
+    text-align: center !important;
+
 }
 
-body#page-course-view-topics.course-33 .uv-welcome-content h2 {
+/* Título */
+
+body.course-33 .uv-welcome-content h2 {
+
     color: #FFFFFF !important;
+
     font-size: 30px !important;
+
     font-weight: 700 !important;
-    line-height: 1.3 !important;
-    margin: 0 0 20px !important;
+
+    line-height: 1.35 !important;
+
+    margin: 0 0 18px !important;
+
+    text-align: center !important;
+
+    text-shadow: 0 2px 8px rgba(0,0,0,.18) !important;
+
 }
 
-body#page-course-view-topics.course-33 .uv-welcome-content p {
+/* Párrafos */
+
+body.course-33 .uv-welcome-content p {
+
     color: #FFFFFF !important;
-    font-size: 17px !important;
-    line-height: 1.6 !important;
-    margin: 0 0 12px !important;
+
+    font-size: 16px !important;
+
+    font-weight: 400 !important;
+
+    line-height: 1.7 !important;
+
+    margin: 8px 0 !important;
+
+    text-align: center !important;
+
+}
+
+/* Enlaces dentro de bienvenida */
+
+body.course-33 .uv-welcome-content a {
+
+    color: #FFFFFF !important;
+
+    font-weight: 700 !important;
+
+    text-decoration: underline !important;
+
 }
 
 
 /* ============================================================
-   10. OCULTAR AVISOS
-   Se conserva la personalizacion original del modulo 296.
+   16. OCULTAR AVISOS
+   MODULO REAL: #module-296
    ============================================================ */
 
-body#page-course-view-topics.course-33 #module-296 {
+body.course-33 #module-296 {
+
     display: none !important;
+
 }
 
 
 /* ============================================================
-   11. BOTONES Y ENLACES
+   17. OCULTAR CONTROLES DE MOSAICOS ANTIGUOS
    ============================================================ */
 
-body#page-course-view-topics.course-33 .btn-primary {
-    background-color: var(--uv-red) !important;
-    border-color: var(--uv-red) !important;
-}
+body.course-33 .above-tiles-buttons {
 
-body#page-course-view-topics.course-33 .btn-primary:hover {
-    background-color: var(--uv-red-dark) !important;
-    border-color: var(--uv-red-dark) !important;
+    display: none !important;
+
 }
 
 
 /* ============================================================
-   12. RESPONSIVE - TABLETAS
+   18. RESPONSIVE - TABLET
    ============================================================ */
 
 @media (max-width: 768px) {
 
-    body#page-course-view-topics.course-33 .course-content {
-        padding: 14px !important;
-    }
+    body.course-33 #page-header {
 
-    body#page-course-view-topics.course-33 .course-section {
-        padding: 17px !important;
-        margin-bottom: 16px !important;
-    }
-
-    body#page-course-view-topics.course-33 #page-header {
         width: calc(100% - 20px) !important;
+
     }
 
-    body#page-course-view-topics.course-33 .uv-welcome {
-        min-height: 280px !important;
+    body.course-33 .course-content {
+
+        padding: 14px !important;
+
+    }
+
+    body.course-33
+    .course-section-header[data-for="section_title"] {
+
+        min-height: 66px !important;
+
+        padding: 12px 15px !important;
+
+        gap: 12px !important;
+
+    }
+
+    body.course-33
+    .course-section-header[data-for="section_title"]::before {
+
+        flex-basis: 42px !important;
+
+        width: 42px !important;
+
+        height: 42px !important;
+
+    }
+
+    body.course-33
+    .course-section-header .sectionname {
+
+        font-size: 18px !important;
+
+    }
+
+    body.course-33 .uv-welcome {
+
+        min-height: 250px !important;
+
         padding: 30px !important;
+
     }
 
-    body#page-course-view-topics.course-33 .uv-welcome-content h2 {
+    body.course-33 .uv-welcome-content h2 {
+
         font-size: 25px !important;
+
     }
+
 }
 
 
 /* ============================================================
-   13. RESPONSIVE - MOVILES
+   19. RESPONSIVE - MOVILES
    ============================================================ */
 
 @media (max-width: 480px) {
 
-    body#page-course-view-topics.course-33 .course-content {
+    body.course-33 #page-header {
+
+        width: calc(100% - 16px) !important;
+
+        border-radius: 9px !important;
+
+    }
+
+    body.course-33 .course-content {
+
         padding: 10px !important;
+
     }
 
-    body#page-course-view-topics.course-33 .course-section {
-        padding: 14px !important;
-        border-radius: 11px !important;
+    body.course-33
+    .course-section-header[data-for="section_title"] {
+
+        min-height: 60px !important;
+
+        padding: 10px 12px !important;
+
+        gap: 9px !important;
+
     }
 
-    body#page-course-view-topics.course-33 .course-section .sectionname,
-    body#page-course-view-topics.course-33 .course-section .sectionname a {
-        font-size: 18px !important;
+    body.course-33
+    .course-section-header[data-for="section_title"]::before {
+
+        flex-basis: 36px !important;
+
+        width: 36px !important;
+
+        height: 36px !important;
+
+        background-size: 20px 20px !important;
+
     }
 
-    body#page-course-view-topics.course-33 .activity-item {
-        padding: 10px !important;
+    body.course-33
+    .course-section-header .sectionname {
+
+        font-size: 16px !important;
+
+        line-height: 1.3 !important;
+
     }
 
-    body#page-course-view-topics.course-33 .uv-welcome {
-        min-height: 300px !important;
-        padding: 25px 20px !important;
+    body.course-33
+    .course-section-header .section_goto i {
+
+        font-size: 16px !important;
+
+    }
+
+    body.course-33
+    .course-section-header + .content {
+
+        padding: 12px !important;
+
+    }
+
+    body.course-33 .uv-welcome {
+
+        min-height: 280px !important;
+
+        padding: 25px 18px !important;
+
         background-position: center center !important;
+
     }
 
-    body#page-course-view-topics.course-33 .uv-welcome-content h2 {
-        font-size: 22px !important;
+    body.course-33 .uv-welcome-content h2 {
+
+        font-size: 21px !important;
+
+        line-height: 1.35 !important;
+
+        margin-bottom: 12px !important;
+
     }
 
-    body#page-course-view-topics.course-33 .uv-welcome-content p {
-        font-size: 15px !important;
+    body.course-33 .uv-welcome-content p {
+
+        font-size: 14px !important;
+
+        line-height: 1.55 !important;
+
     }
+
 }
 
 
 /* ============================================================
-   14. ACCESIBILIDAD
+   20. ACCESIBILIDAD
    ============================================================ */
 
 @media (prefers-reduced-motion: reduce) {
-    body#page-course-view-topics.course-33 *,
-    body#page-course-view-topics.course-33 *::before,
-    body#page-course-view-topics.course-33 *::after {
+
+    body.course-33 .section-item,
+    body.course-33 .course-section-header,
+    body.course-33 .section_goto i {
+
         transition: none !important;
-        animation: none !important;
+
     }
+
 }
+
 
 /* ============================================================
    FIN DEL CSS
-   UNIVERSIDAD DEL VALLE - CURSO 33
-   FORMATO TEMAS
+   UNIVERSIDAD DEL VALLE
+   CURSO 33
+   SELECCIONES PERSONALIZADAS
    ============================================================ */
+
