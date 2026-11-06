@@ -1581,10 +1581,50 @@ body.course-33 .above-tiles-buttons {
 }
 
 
+
+/* CONTENEDOR COMPLETO DE LA SECCIÓN */
+.section-item:has(.sectionid-207-title) {
+    border: 2px solid #1688E8 !important;
+    border-radius: 14px !important;
+    overflow: hidden;
+    margin-bottom: 25px !important;
+    background-color: #edf6ff !important;
+}
+
+/* ENCABEZADO DE LA SECCIÓN */
+.section-item:has(.sectionid-207-title) .course-section-header {
+    background-color: #dceeff !important;
+    border-bottom: 1px solid #1688E8 !important;
+    padding: 15px 20px !important;
+}
+
+/* ÁREA QUE SE DESPLIEGA */
+.section-item:has(.sectionid-207-title) #coursecontentcollapse1 {
+    background-color: #edf6ff !important;
+    padding: 15px !important;
+}
+
+/* TARJETAS DE ACTIVIDADES */
+.section-item:has(.sectionid-207-title) .activity-item {
+    background-color: #ffffff !important;
+    border: 1px solid #dce5ed !important;
+    border-radius: 10px !important;
+    margin-bottom: 12px !important;
+    padding: 12px !important;
+}
+
+/* EVITAR QUE LAS ACTIVIDADES PIERDAN EL FONDO */
+.section-item:has(.sectionid-207-title) .activity-altcontent {
+    background-color: transparent;
+}
+
+
 /* ============================================================
    FIN DEL CSS
    UNIVERSIDAD DEL VALLE
    CURSO 33
    SELECCIONES PERSONALIZADAS
    ============================================================ */
+
+
 
