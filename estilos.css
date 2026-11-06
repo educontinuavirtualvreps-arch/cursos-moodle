@@ -1585,34 +1585,31 @@ body.course-33 .above-tiles-buttons {
 
 
 
-/* Contenedor general de la sección Recursos */
-#section-1 .section-item {
+/* Marco azul de Recursos sin alterar sus dimensiones */
+#section-1 {
     background-color: #eaf3ff !important;
     border: 2px solid #1688E8 !important;
     border-radius: 14px !important;
-    padding: 12px !important;
-    margin-bottom: 20px !important;
+    box-sizing: border-box !important;
 }
 
-/* Encabezado de Recursos */
+/* Encabezado azul */
 #section-1 .course-section-header {
     background-color: #eaf3ff !important;
-    border-radius: 10px 10px 0 0 !important;
+    border-radius: 12px 12px 0 0 !important;
 }
 
-/* Área donde se despliegan las actividades */
-#section-1 .content {
+/* Mantener el área de contenido blanca */
+#section-1 > .content {
     background-color: #ffffff !important;
-    border-radius: 10px !important;
-    padding: 12px !important;
 }
 
-/* Tarjetas y actividades interiores */
+/* Actividades y recursos interiores */
 #section-1 .activity-item {
     background-color: #ffffff !important;
 }
 
-/* Evitar que las descripciones tengan fondo azul */
+/* Descripciones y ejercicios */
 #section-1 .activity-altcontent {
     background-color: #ffffff !important;
 }
@@ -1649,6 +1646,65 @@ body.course-33 .above-tiles-buttons {
 }
 
 
+
+/* Marco exterior de H5P */
+#section-3 .section-item {
+    background-color: #f4edfc !important;
+    border: 2px solid #8738c5 !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+}
+
+/* Encabezado morado claro */
+#section-3 .course-section-header {
+    background-color: #f4edfc !important;
+    border-bottom: 1px solid #e5d8f3 !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* Contenido interior blanco */
+#section-3 > .content {
+    background-color: #ffffff !important;
+}
+
+/* Actividades interiores */
+#section-3 .activity-item {
+    background-color: #ffffff !important;
+}
+
+/* Descripciones y contenidos */
+#section-3 .activity-altcontent {
+    background-color: #ffffff !important;
+}
+
+/* SECCIÓN 4 - IA (ROJO) */
+.section-item:has(.course-section-header[data-id="210"]) {
+    border: 1px solid #f2d5d8 !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    background-color: #ffffff !important;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Encabezado rojo claro */
+.section-item:has(.course-section-header[data-id="210"]) 
+.course-section-header {
+    background-color: #fff0f1 !important;
+    border-left: 3px solid #dc3545 !important;
+    border-bottom: 1px solid #f2d5d8 !important;
+}
+
+/* Contenido blanco, conservando sus dimensiones */
+.section-item:has(.course-section-header[data-id="210"]) 
+.content {
+    background-color: #ffffff !important;
+}
+
+/* Color del título */
+.section-item:has(.course-section-header[data-id="210"]) 
+.sectionname a {
+    color: #212529 !important;
+}
 /* ============================================================
    FIN DEL CSS
    UNIVERSIDAD DEL VALLE
