@@ -1719,29 +1719,31 @@ body.course-33 .above-tiles-buttons {
     color: #212529 !important;
 }
 
-
 /* ==========================================
    FONDO INSTITUCIONAL - CURSO 33
-   Capacitación Moodle | Universidad del Valle
+   Capacitación Moodle
 ========================================== */
 
-/* Fondo de la página del curso */
 body.course-33 #page.drawers {
     background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Plantilla%20corporativa%20geom%C3%A9trica%20en%20rojo%20suave.png") !important;
+
     background-size: cover !important;
     background-position: center top !important;
     background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
+
+    /* La imagen se desplaza con el contenido */
+    background-attachment: scroll !important;
+
     background-color: #ffffff !important;
 }
 
-/* Permitir que se vea el fondo detrás del contenido */
+/* Contenedores transparentes */
 body.course-33 #topofscroll,
 body.course-33 #page.drawers .main-inner {
-    background-color: transparent !important;
+    background: transparent !important;
 }
 
-/* Mantener blancas las tarjetas y secciones del curso */
+/* Mantener legibles las secciones */
 body.course-33 #region-main,
 body.course-33 .course-content .section {
     background-color: rgba(255, 255, 255, 0.94);
