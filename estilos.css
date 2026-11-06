@@ -1618,6 +1618,36 @@ body.course-33 .above-tiles-buttons {
 }
 
 
+/* Marco exterior de la sección Actividades */
+#section-2 .section-item {
+    background-color: #eaf7ef !important;
+    border: 2px solid #20a052 !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+}
+
+/* Encabezado de la sección */
+#section-2 .course-section-header {
+    background-color: #eaf7ef !important;
+    border-bottom: 1px solid #d5e9dc !important;
+    border-radius: 12px 12px 0 0 !important;
+}
+
+/* Contenido interior: conservar fondo blanco */
+#section-2 > .content {
+    background-color: #ffffff !important;
+}
+
+/* Actividades y tarjetas interiores */
+#section-2 .activity-item {
+    background-color: #ffffff !important;
+}
+
+/* Descripciones y ejercicios */
+#section-2 .activity-altcontent {
+    background-color: #ffffff !important;
+}
+
 
 /* ============================================================
    FIN DEL CSS
