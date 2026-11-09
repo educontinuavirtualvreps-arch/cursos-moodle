@@ -1650,12 +1650,18 @@ body.course-33 .above-tiles-buttons {
 
 
 
+/* =====================================================
+   UNIVERSIDAD DEL VALLE
+   CURSO 33 - FORMATO TOPICS
+   ESTILOS PERSONALIZADOS POR SECCIÓN
+   ===================================================== */
+
+
 /* =====================================
-   RECURSOS - MARCO AZUL COMPLETO
+   RECURSOS - MARCO AZUL
    ===================================== */
 
-/* Marco exterior */
-#section-1 > .section-item {
+body#page-course-view-topics.course-33 #section-1 > .section-item {
     border: 2px solid #1688E8 !important;
     border-radius: 14px !important;
     background: #eaf3ff !important;
@@ -1663,97 +1669,90 @@ body.course-33 .above-tiles-buttons {
     overflow: hidden !important;
 }
 
-/* Encabezado azul */
-#section-1 > .section-item > .course-section-header {
+body#page-course-view-topics.course-33 #section-1 > .section-item > .course-section-header {
     background-color: #eaf3ff !important;
     border-bottom: 1px solid #d5e7fa !important;
     border-left: 3px solid #1688E8 !important;
 }
 
-/* Área de contenido blanca */
-#section-1 > .section-item > .content {
+body#page-course-view-topics.course-33 #section-1 > .section-item > .content {
     background-color: #ffffff !important;
 }
 
-/* Recursos interiores blancos */
-#section-1 .activity-item {
+body#page-course-view-topics.course-33 #section-1 .activity-item {
     background-color: #ffffff !important;
 }
 
-/* Contenido de los recursos */
-#section-1 .activity-altcontent {
+body#page-course-view-topics.course-33 #section-1 .activity-altcontent {
     background-color: #ffffff !important;
 }
 
 
-/* Marco exterior de la sección Actividades */
-#section-2 .section-item {
+/* =====================================
+   ACTIVIDADES - MARCO VERDE
+   ===================================== */
+
+body#page-course-view-topics.course-33 #section-2 .section-item {
     background-color: #eaf7ef !important;
     border: 2px solid #20a052 !important;
     border-radius: 14px !important;
     box-sizing: border-box !important;
 }
 
-/* Encabezado de la sección */
-#section-2 .course-section-header {
+body#page-course-view-topics.course-33 #section-2 .course-section-header {
     background-color: #eaf7ef !important;
     border-bottom: 1px solid #d5e9dc !important;
     border-radius: 12px 12px 0 0 !important;
 }
 
-/* Contenido interior: conservar fondo blanco */
-#section-2 > .content {
+body#page-course-view-topics.course-33 #section-2 > .content {
     background-color: #ffffff !important;
 }
 
-/* Actividades y tarjetas interiores */
-#section-2 .activity-item {
+body#page-course-view-topics.course-33 #section-2 .activity-item {
     background-color: #ffffff !important;
 }
 
-/* Descripciones y ejercicios */
-#section-2 .activity-altcontent {
+body#page-course-view-topics.course-33 #section-2 .activity-altcontent {
     background-color: #ffffff !important;
 }
 
 
+/* =====================================
+   H5P - MARCO MORADO
+   ===================================== */
 
-/* Marco exterior de H5P */
-#section-3 .section-item {
+body#page-course-view-topics.course-33 #section-3 .section-item {
     background-color: #f4edfc !important;
     border: 2px solid #8738c5 !important;
     border-radius: 14px !important;
     box-sizing: border-box !important;
 }
 
-/* Encabezado morado claro */
-#section-3 .course-section-header {
+body#page-course-view-topics.course-33 #section-3 .course-section-header {
     background-color: #f4edfc !important;
     border-bottom: 1px solid #e5d8f3 !important;
     border-radius: 12px 12px 0 0 !important;
 }
 
-/* Contenido interior blanco */
-#section-3 > .content {
+body#page-course-view-topics.course-33 #section-3 > .content {
     background-color: #ffffff !important;
 }
 
-/* Actividades interiores */
-#section-3 .activity-item {
+body#page-course-view-topics.course-33 #section-3 .activity-item {
     background-color: #ffffff !important;
 }
 
-/* Descripciones y contenidos */
-#section-3 .activity-altcontent {
+body#page-course-view-topics.course-33 #section-3 .activity-altcontent {
     background-color: #ffffff !important;
 }
+
 
 /* =====================================
-   IA - MARCO ROJO COMPLETO
+   INTELIGENCIA ARTIFICIAL - MARCO ROJO
    ===================================== */
 
-/* Marco exterior */
-#section-4 > .section-item {
+body#page-course-view-topics.course-33 #section-4 > .section-item {
     border: 2px solid #dc3545 !important;
     border-radius: 14px !important;
     background: #fff0f1 !important;
@@ -1761,28 +1760,30 @@ body.course-33 .above-tiles-buttons {
     overflow: hidden !important;
 }
 
-/* Encabezado rojo */
-#section-4 > .section-item > .course-section-header {
+body#page-course-view-topics.course-33 #section-4 > .section-item > .course-section-header {
     background-color: #fff0f1 !important;
     border-bottom: 1px solid #f2d5d8 !important;
     border-left: 3px solid #dc3545 !important;
 }
 
-/* Área de contenido blanca */
-#section-4 > .section-item > .content {
+body#page-course-view-topics.course-33 #section-4 > .section-item > .content {
     background-color: #ffffff !important;
 }
 
-/* Actividades interiores */
-#section-4 .activity-item,
-#section-4 .activity-altcontent {
+body#page-course-view-topics.course-33 #section-4 .activity-item,
+body#page-course-view-topics.course-33 #section-4 .activity-altcontent {
     background-color: #ffffff !important;
 }
 
-/* Título */
-#section-4 .sectionname a {
+body#page-course-view-topics.course-33 #section-4 .sectionname a {
     color: #212529 !important;
 }
+
+
+/* =====================================================
+   FIN DE ESTILOS EXCLUSIVOS DEL CURSO 33
+   ===================================================== */
+
 
 
 /* ==========================================
