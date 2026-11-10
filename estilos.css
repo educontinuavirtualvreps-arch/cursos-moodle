@@ -1793,7 +1793,7 @@ body#page-course-view-topics.course-33 #section-4 .sectionname a {
 
 /* Fondo de la página del curso */
 body.course-33 #page.drawers {
-    background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Plantilla%20corporativa%20geom%C3%A9trica%20en%20rojo%20suave.png") !important;
+    background-image: url("https://github.com/educontinuavirtualvreps-arch/cursos-moodle/blob/main/imagenes/Gemini_Generated_Image_i6qqdji6qqdji6qq.jpg") !important;
     background-size: cover !important;
     background-position: center top !important;
     background-repeat: no-repeat !important;
@@ -1811,6 +1811,162 @@ body.course-33 #page.drawers .main-inner {
 body.course-33 #region-main,
 body.course-33 .course-content .section {
     background-color: rgba(255, 255, 255, 0.94);
+}
+
+
+
+/* ============================================================
+   DISTRIBUCION EN CUADRICULA - CURSO 33
+   RECURSOS + ACTIVIDADES
+   H5P + INTELIGENCIA ARTIFICIAL
+   EXCLUSIVO PARA ESTE CURSO
+   ============================================================ */
+
+/* Contenedor general de las secciones */
+
+body#page-course-view-topics.course-33 ul.topics,
+body#page-course-view-topics.course-33 ul.course-sections {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    gap: 22px !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin: 20px auto !important;
+
+    padding: 0 !important;
+
+    align-items: stretch !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* Restablecer las dimensiones de cada sección */
+
+body#page-course-view-topics.course-33 ul.topics > li.section,
+body#page-course-view-topics.course-33 ul.course-sections > li.section {
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    box-sizing: border-box !important;
+
+    align-self: stretch !important;
+
+}
+
+/* Cada tarjeta ocupa todo el espacio de su columna */
+
+body#page-course-view-topics.course-33 li.section > .section-item {
+
+    display: flex !important;
+
+    flex-direction: column !important;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    min-width: 0 !important;
+
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* La sección GENERAL conserva el ancho completo */
+
+body#page-course-view-topics.course-33 #section-0 {
+
+    grid-column: 1 / -1 !important;
+
+}
+
+/* Recursos */
+
+body#page-course-view-topics.course-33 #section-1 {
+
+    grid-column: 1 !important;
+
+}
+
+/* Actividades */
+
+body#page-course-view-topics.course-33 #section-2 {
+
+    grid-column: 2 !important;
+
+}
+
+/* H5P */
+
+body#page-course-view-topics.course-33 #section-3 {
+
+    grid-column: 1 !important;
+
+}
+
+/* Inteligencia Artificial */
+
+body#page-course-view-topics.course-33 #section-4 {
+
+    grid-column: 2 !important;
+
+}
+
+/* Evitar desbordamientos del contenido */
+
+body#page-course-view-topics.course-33 li.section .content,
+body#page-course-view-topics.course-33 li.section .section-item,
+body#page-course-view-topics.course-33 li.section .activity-item {
+
+    min-width: 0 !important;
+
+    max-width: 100% !important;
+
+    box-sizing: border-box !important;
+
+}
+
+/* Adaptación para tabletas y celulares */
+
+@media (max-width: 767px) {
+
+    body#page-course-view-topics.course-33 ul.topics,
+    body#page-course-view-topics.course-33 ul.course-sections {
+
+        grid-template-columns: minmax(0, 1fr) !important;
+
+        gap: 16px !important;
+
+    }
+
+    body#page-course-view-topics.course-33 #section-0,
+    body#page-course-view-topics.course-33 #section-1,
+    body#page-course-view-topics.course-33 #section-2,
+    body#page-course-view-topics.course-33 #section-3,
+    body#page-course-view-topics.course-33 #section-4 {
+
+        grid-column: 1 !important;
+
+    }
+
 }
 
 /* ============================================================
