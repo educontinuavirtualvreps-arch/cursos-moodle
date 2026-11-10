@@ -1792,9 +1792,10 @@ body#page-course-view-topics.course-33 #section-4 .sectionname a {
    Universidad del Valle
 ========================================== */
 
-/* Imagen de fondo del curso */
-body#page-course-view-topics.course-33 #page.drawers {
-    background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Gemini_Generated_Image_i6qqdji6qqdji6qq.jpg") !important;
+/* Fondo de la página del curso */
+body.course-33 #page.drawers {
+   
+    background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Fondo%20geom%C3%A9trico%20rojo%20y%20blanco.png") !important;  
     background-size: cover !important;
     background-position: center top !important;
     background-repeat: no-repeat !important;
@@ -1802,21 +1803,17 @@ body#page-course-view-topics.course-33 #page.drawers {
     background-color: #ffffff !important;
 }
 
-/* Permitir que se vea la imagen detrás del contenido */
-body#page-course-view-topics.course-33 #topofscroll,
-body#page-course-view-topics.course-33 #page.drawers .main-inner {
+/* Permitir que se vea el fondo detrás del contenido */
+body.course-33 #topofscroll,
+body.course-33 #page.drawers .main-inner {
     background-color: transparent !important;
 }
 
-/* Conservar el fondo claro de las áreas de contenido */
-body#page-course-view-topics.course-33 #region-main,
-body#page-course-view-topics.course-33 .course-content .section {
-    background-color: rgba(255, 255, 255, 0.94) !important;
+/* Mantener blancas las tarjetas y secciones del curso */
+body.course-33 #region-main,
+body.course-33 .course-content .section {
+    background-color: rgba(255, 255, 255, 0.94);
 }
-
-/* Fin del fondo personalizado del curso 33 */
-
-
 
 /* ============================================================
    DISTRIBUCION EN CUADRICULA - CURSO 33
