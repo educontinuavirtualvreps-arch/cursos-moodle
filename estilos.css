@@ -1786,14 +1786,15 @@ body#page-course-view-topics.course-33 #section-4 .sectionname a {
 
 
 
+
 /* ==========================================
    FONDO INSTITUCIONAL - CURSO 33
-   Capacitación Moodle | Universidad del Valle
+   Universidad del Valle
 ========================================== */
 
-/* Fondo de la página del curso */
-body.course-33 #page.drawers {
-    background-image: url("https://github.com/educontinuavirtualvreps-arch/cursos-moodle/blob/main/imagenes/Gemini_Generated_Image_i6qqdji6qqdji6qq.jpg") !important;
+/* Imagen de fondo del curso */
+body#page-course-view-topics.course-33 #page.drawers {
+    background-image: url("https://raw.githubusercontent.com/educontinuavirtualvreps-arch/cursos-moodle/main/imagenes/Gemini_Generated_Image_i6qqdji6qqdji6qq.jpg") !important;
     background-size: cover !important;
     background-position: center top !important;
     background-repeat: no-repeat !important;
@@ -1801,17 +1802,19 @@ body.course-33 #page.drawers {
     background-color: #ffffff !important;
 }
 
-/* Permitir que se vea el fondo detrás del contenido */
-body.course-33 #topofscroll,
-body.course-33 #page.drawers .main-inner {
+/* Permitir que se vea la imagen detrás del contenido */
+body#page-course-view-topics.course-33 #topofscroll,
+body#page-course-view-topics.course-33 #page.drawers .main-inner {
     background-color: transparent !important;
 }
 
-/* Mantener blancas las tarjetas y secciones del curso */
-body.course-33 #region-main,
-body.course-33 .course-content .section {
-    background-color: rgba(255, 255, 255, 0.94);
+/* Conservar el fondo claro de las áreas de contenido */
+body#page-course-view-topics.course-33 #region-main,
+body#page-course-view-topics.course-33 .course-content .section {
+    background-color: rgba(255, 255, 255, 0.94) !important;
 }
+
+/* Fin del fondo personalizado del curso 33 */
 
 
 
@@ -1968,6 +1971,205 @@ body#page-course-view-topics.course-33 li.section .activity-item {
     }
 
 }
+
+
+/* ==========================================================
+   CURSO 33 - DISTRIBUCIÓN EN DOS COLUMNAS
+   MODO NORMAL: CUADRÍCULA 2 x 2
+   MODO EDICIÓN: DISEÑO VERTICAL ORIGINAL DE MOODLE
+   ========================================================== */
+
+/* ----------------------------------------------------------
+   MODO NORMAL: DOS COLUMNAS
+   ---------------------------------------------------------- */
+
+@supports selector(body:has(input)) {
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) {
+
+        display: grid !important;
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 24px !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        padding: 0 !important;
+
+        box-sizing: border-box !important;
+
+        align-items: stretch !important;
+    }
+
+    /* Bienvenida: ocupa todo el ancho si está en esta cuadrícula */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > #section-0 {
+
+        grid-column: 1 / -1 !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+    }
+
+    /* Recursos: primera columna */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > #section-1 {
+
+        grid-column: 1 !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Actividades: segunda columna */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > #section-2 {
+
+        grid-column: 2 !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* H5P: primera columna de la segunda fila */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > #section-3 {
+
+        grid-column: 1 !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Inteligencia Artificial: segunda columna de la segunda fila */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > #section-4 {
+
+        grid-column: 2 !important;
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        margin: 0 !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Evitar que el contenido interno desborde las tarjetas */
+
+    body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+    .course-content ul.topics:has(> #section-1) > li .section-item {
+
+        width: 100% !important;
+
+        min-width: 0 !important;
+
+        max-width: 100% !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* ------------------------------------------------------
+       MODO EDICIÓN: RESTAURAR DISEÑO VERTICAL
+       El interruptor marcado identifica el modo edición.
+       ------------------------------------------------------ */
+
+    body#page-course-view-topics.course-33:has(input[name="setmode"]:checked)
+    .course-content ul.topics:has(> #section-1) {
+
+        display: block !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+    }
+
+    body#page-course-view-topics.course-33:has(input[name="setmode"]:checked)
+    .course-content ul.topics:has(> #section-1) > li {
+
+        display: block !important;
+
+        width: 100% !important;
+
+        max-width: 100% !important;
+
+        margin-left: 0 !important;
+
+        margin-right: 0 !important;
+
+        grid-column: auto !important;
+
+        box-sizing: border-box !important;
+    }
+}
+
+/* ----------------------------------------------------------
+   ADAPTACIÓN PARA CELULARES
+   Una columna para evitar tarjetas demasiado estrechas.
+   ---------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+    @supports selector(body:has(input)) {
+
+        body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+        .course-content ul.topics:has(> #section-1) {
+
+            grid-template-columns: minmax(0, 1fr) !important;
+
+            gap: 18px !important;
+        }
+
+        body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+        .course-content ul.topics:has(> #section-1) > #section-1,
+        body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+        .course-content ul.topics:has(> #section-1) > #section-2,
+        body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+        .course-content ul.topics:has(> #section-1) > #section-3,
+        body#page-course-view-topics.course-33:not(:has(input[name="setmode"]:checked))
+        .course-content ul.topics:has(> #section-1) > #section-4 {
+
+            grid-column: 1 !important;
+        }
+    }
+}
+
 
 /* ============================================================
    FIN DEL CSS
